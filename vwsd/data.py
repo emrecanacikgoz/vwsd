@@ -4,7 +4,6 @@ import json
 import re
 from functools import wraps
 
-import click
 from tqdm import tqdm
 from PIL import Image
 import torch
@@ -192,6 +191,7 @@ def clip_collate_fn(pad_token_id):
             'indexes': _helper('index'),
             'raw_words': _helper('raw_word'),
             'raw_contexts': _helper('raw_context'),
+            'image_files': _helper('image_files'),
         }
 
     return _collate_fn

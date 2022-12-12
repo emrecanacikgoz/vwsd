@@ -12,45 +12,27 @@ class BaseExperiment(pl.LightningModule):
         self.config = config
         model_name = self.config.get('model', {}).get('name', 'UndefinedModel')
         if model_name == 'CLIPZeroShotBaseline':
-            self.model = CLIPZeroShotBaseline(config.get('model', {}))
+            self.model = CLIPZeroShotBaseline()
         else:
             raise NotImplementedError(f'There is no such model as {model_name}')
         self.save_hyperparameters(config)
 
     def forward(self, batch):
-        return self.model(batch)
-
-    def training_step(self, batch, batch_index):
-        output = self(batch)
-        return {
-            "loss": output.loss,
-        }
-
-    @torch.no_grad()
-    def validation_step(self, batch, batch_index):
-        labels = batch.pop('labels')
-        output = self(batch)
-        return {
-            'gold': labels,
-            'pred': output.logits.argmax(dim=1),
-        }
+        return self.model(**batch)
 
     @torch.no_grad()
     def predict_step(self, batch, batch_idx, dataloader_idx=0):
         output = self(batch)
-        prob = output.logits.softmax(dim=1)
-        prob = prob[:, 1].tolist()
-        indexes = batch['indexes'].tolist()
+        prob = output.softmax(dim=1)
+        N = prob.shape[-1]
+
+        preds = prob.topk(N).indices.cpu().tolist()
+        image_files = []
+        for i, pred in enumerate(preds):
+            this = [batch['image_files'][i][j] for j in pred]
+            image_files.append(this)
+        indexes = batch['indexes']
         return {
-            'predictions': prob,
+            'image_files': image_files,
             'indexes': indexes,
         }
-    
-    def validation_epoch_end(self, outputs):
-        pred = torch.cat([x['pred'] for x in outputs])
-        gold = torch.cat([x['gold'] for x in outputs])
-        self.log('f1', f1_score(pred, gold), prog_bar=True)
-
-    def configure_optimizers(self):
-        params = filter(lambda p: p.requires_grad, self.model.parameters())
-        return optim.AdamW(params, lr=self.config['lr'])

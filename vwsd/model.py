@@ -15,15 +15,16 @@ class CLIPZeroShotBaseline(nn.Module):
         input = input.reshape(B*N, T)
         return input
 
-    def forward(self, pixel_values, input_ids, attention_mask):
+    def forward(self, pixel_values, input_ids, attention_mask, **kwargs):
         B, N, C, H, W = pixel_values.shape
         pixel_values = pixel_values.reshape(B*N, C, H, W)
-        input_ids = self._expand(input_ids, N)
-        attention_mask = self._expand(attention_mask, N)
         outputs = self.model(
             pixel_values=pixel_values,
             input_ids=input_ids,
             attention_mask=attention_mask,
         )
-        logits_per_image = outputs.logits_per_image
-        return logits_per_image
+        logits = outputs.logits_per_text  # logits_per_text: (B, B*N)
+        logits = logits.reshape(B, B, N)
+        I = torch.arange(B)
+        logits = logits[I, I, :]
+        return logits
