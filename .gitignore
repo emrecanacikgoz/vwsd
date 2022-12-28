@@ -129,3 +129,7 @@ dmypy.json
 .pyre/
 
 .hydra
+
+# Batur special
+notebooks/jupyter_submit.sh
+scripts/clip_zs_cluster.sh
