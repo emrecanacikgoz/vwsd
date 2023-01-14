@@ -26,3 +26,5 @@ python eval.py --dataset trial --input_path /kuacc/users/eacikgoz17/semeval/resu
 | Blip          | Train           |         Full  |   7793/12869  |     60.55%    |
 | Blip          | Train           |     Left-only |               |               |
 | Blip          | Train           |    Right-only |               |               |
+| Clip-Google   | Trial           |         Full  |      14/16    |     87.50%    |
+| Clip-CNet     | Trial           |         Full  |      10/16    |     62.50%    |
