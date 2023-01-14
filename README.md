@@ -15,8 +15,8 @@ python eval.py --dataset trial --input_path /kuacc/users/eacikgoz17/semeval/resu
 | Model         | Task            | Context       | Score         | Score         |
 | :------------ |:---------------:|:-------------:|:-------------:|:-------------:|
 | Clip          | Trial           |         Full  |      9/16     |     56.25%    |
-| Clip          | Trial           |     Left-only |               |               |
-| Clip          | Trial           |    Right-only |               |               |
+| Clip          | Trial           |     Left-only |      7/16     |     43.75%    |
+| Clip          | Trial           |    Right-only |      8/16     |     50.00%    |
 | Clip          | Train           |         Full  |               |               |
 | Clip          | Train           |     Left-only |               |               |
 | Clip          | Train           |    Right-only |               |               |
@@ -26,4 +26,3 @@ python eval.py --dataset trial --input_path /kuacc/users/eacikgoz17/semeval/resu
 | Blip          | Train           |         Full  |   7793/12869  |     60.55%    |
 | Blip          | Train           |     Left-only |               |               |
 | Blip          | Train           |    Right-only |               |               |
-
