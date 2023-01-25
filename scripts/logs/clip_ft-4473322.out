@@ -1,0 +1,73 @@
+=======================
+Loading Anaconda Module...
+"data":    {'debug': True, 'batch_size': 1, 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-trial-v1/trial_v1'}
+"model":   {'name': 'CLIPFinetune'}
+"output":  clip_ft.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 15, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+/scratch/users/oince22/vwsd/scripts
+self.debug: True
+Config: "data":    {'debug': True, 'batch_size': 1, 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-trial-v1/trial_v1'}
+"model":   {'name': 'CLIPFinetune'}
+"output":  /scratch/users/oince22/vwsd/scripts/clip_ft.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 15, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+/scratch/users/oince22/vwsd/scripts
+self.debug: True
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/40 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/40 [00:00<?, ?it/s] Epoch 0:   2%|▎         | 1/40 [00:07<04:42,  7.25s/it]Epoch 0:   2%|▎         | 1/40 [00:07<04:42,  7.25s/it, loss=1.47]Epoch 0:   5%|▌         | 2/40 [00:07<02:31,  3.99s/it, loss=1.47]Epoch 0:   5%|▌         | 2/40 [00:08<02:32,  4.01s/it, loss=1.47]Epoch 0:   8%|▊         | 3/40 [00:08<01:46,  2.87s/it, loss=1.47]Epoch 0:   8%|▊         | 3/40 [00:08<01:46,  2.87s/it, loss=1.48]Epoch 0:  10%|█         | 4/40 [00:09<01:23,  2.31s/it, loss=1.48]Epoch 0:  10%|█         | 4/40 [00:09<01:23,  2.31s/it, loss=1.71]Epoch 0:  12%|█▎        | 5/40 [00:09<01:09,  1.99s/it, loss=1.71]Epoch 0:  12%|█▎        | 5/40 [00:09<01:09,  2.00s/it, loss=1.66]Epoch 0:  15%|█▌        | 6/40 [00:10<01:00,  1.79s/it, loss=1.66]Epoch 0:  15%|█▌        | 6/40 [00:10<01:00,  1.79s/it, loss=1.78]Epoch 0:  18%|█▊        | 7/40 [00:11<00:54,  1.64s/it, loss=1.78]Epoch 0:  18%|█▊        | 7/40 [00:11<00:54,  1.64s/it, loss=1.74]Epoch 0:  20%|██        | 8/40 [00:12<00:48,  1.53s/it, loss=1.74]Epoch 0:  20%|██        | 8/40 [00:12<00:48,  1.53s/it, loss=1.7] Epoch 0:  22%|██▎       | 9/40 [00:12<00:44,  1.44s/it, loss=1.7]Epoch 0:  22%|██▎       | 9/40 [00:12<00:44,  1.44s/it, loss=1.68]Epoch 0:  25%|██▌       | 10/40 [00:13<00:41,  1.37s/it, loss=1.68]Epoch 0:  25%|██▌       | 10/40 [00:13<00:41,  1.37s/it, loss=1.65]Epoch 0:  28%|██▊       | 11/40 [00:14<00:38,  1.31s/it, loss=1.65]Epoch 0:  28%|██▊       | 11/40 [00:14<00:38,  1.32s/it, loss=1.64]Epoch 0:  30%|███       | 12/40 [00:15<00:35,  1.27s/it, loss=1.64]Epoch 0:  30%|███       | 12/40 [00:15<00:35,  1.27s/it, loss=1.7] Epoch 0:  32%|███▎      | 13/40 [00:15<00:32,  1.22s/it, loss=1.7]Epoch 0:  32%|███▎      | 13/40 [00:15<00:32,  1.22s/it, loss=1.7]Epoch 0:  35%|███▌      | 14/40 [00:16<00:30,  1.18s/it, loss=1.7]Epoch 0:  35%|███▌      | 14/40 [00:16<00:30,  1.18s/it, loss=1.68]Epoch 0:  38%|███▊      | 15/40 [00:17<00:28,  1.15s/it, loss=1.68]Epoch 0:  38%|███▊      | 15/40 [00:17<00:28,  1.15s/it, loss=1.67]Epoch 0:  40%|████      | 16/40 [00:18<00:27,  1.13s/it, loss=1.67]Epoch 0:  40%|████      | 16/40 [00:18<00:27,  1.13s/it, loss=1.66]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (89550550 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Epoch 0:  42%|████▎     | 17/40 [00:18<00:25,  1.11s/it, loss=1.66]Epoch 0:  42%|████▎     | 17/40 [00:18<00:25,  1.11s/it, loss=1.65]Epoch 0:  45%|████▌     | 18/40 [00:19<00:23,  1.09s/it, loss=1.65]Epoch 0:  45%|████▌     | 18/40 [00:19<00:23,  1.09s/it, loss=1.64]Epoch 0:  48%|████▊     | 19/40 [00:20<00:22,  1.07s/it, loss=1.64]Epoch 0:  48%|████▊     | 19/40 [00:20<00:22,  1.07s/it, loss=1.63]Epoch 0:  50%|█████     | 20/40 [00:21<00:21,  1.05s/it, loss=1.63]Epoch 0:  50%|█████     | 20/40 [00:21<00:21,  1.05s/it, loss=1.62]Epoch 0:  52%|█████▎    | 21/40 [00:21<00:19,  1.03s/it, loss=1.62]Epoch 0:  52%|█████▎    | 21/40 [00:21<00:19,  1.03s/it, loss=1.64]Epoch 0:  55%|█████▌    | 22/40 [00:22<00:18,  1.02s/it, loss=1.64]Epoch 0:  55%|█████▌    | 22/40 [00:22<00:18,  1.02s/it, loss=1.64]Epoch 0:  57%|█████▊    | 23/40 [00:23<00:17,  1.01s/it, loss=1.64]Epoch 0:  57%|█████▊    | 23/40 [00:23<00:17,  1.01s/it, loss=1.65]Epoch 0:  60%|██████    | 24/40 [00:23<00:15,  1.00it/s, loss=1.65]Epoch 0:  60%|██████    | 24/40 [00:23<00:15,  1.00it/s, loss=1.6] Epoch 0:  62%|██████▎   | 25/40 [00:24<00:14,  1.01it/s, loss=1.6]Epoch 0:  62%|██████▎   | 25/40 [00:24<00:14,  1.01it/s, loss=1.64]Epoch 0:  65%|██████▌   | 26/40 [00:25<00:13,  1.02it/s, loss=1.64]Epoch 0:  65%|██████▌   | 26/40 [00:25<00:13,  1.02it/s, loss=1.6] Epoch 0:  68%|██████▊   | 27/40 [00:26<00:12,  1.03it/s, loss=1.6]Epoch 0:  68%|██████▊   | 27/40 [00:26<00:12,  1.03it/s, loss=1.6]Epoch 0:  70%|███████   | 28/40 [00:26<00:11,  1.04it/s, loss=1.6]Epoch 0:  70%|███████   | 28/40 [00:26<00:11,  1.04it/s, loss=1.6]Epoch 0:  72%|███████▎  | 29/40 [00:27<00:10,  1.05it/s, loss=1.6]Epoch 0:  72%|███████▎  | 29/40 [00:27<00:10,  1.05it/s, loss=1.6]Epoch 0:  75%|███████▌  | 30/40 [00:28<00:09,  1.06it/s, loss=1.6]Epoch 0:  75%|███████▌  | 30/40 [00:28<00:09,  1.06it/s, loss=1.6]Epoch 0:  78%|███████▊  | 31/40 [00:29<00:08,  1.07it/s, loss=1.6]Epoch 0:  78%|███████▊  | 31/40 [00:29<00:08,  1.06it/s, loss=1.64]Epoch 0:  80%|████████  | 32/40 [00:29<00:07,  1.07it/s, loss=1.64]Epoch 0:  80%|████████  | 32/40 [00:29<00:07,  1.07it/s, loss=1.64]Epoch 0:  82%|████████▎ | 33/40 [00:30<00:06,  1.08it/s, loss=1.64]Epoch 0:  82%|████████▎ | 33/40 [00:30<00:06,  1.08it/s, loss=1.63]Epoch 0:  85%|████████▌ | 34/40 [00:31<00:05,  1.09it/s, loss=1.63]Epoch 0:  85%|████████▌ | 34/40 [00:31<00:05,  1.08it/s, loss=1.63]Epoch 0:  88%|████████▊ | 35/40 [00:32<00:04,  1.09it/s, loss=1.63]Epoch 0:  88%|████████▊ | 35/40 [00:32<00:04,  1.09it/s, loss=1.63]Epoch 0:  90%|█████████ | 36/40 [00:32<00:03,  1.10it/s, loss=1.63]Epoch 0:  90%|█████████ | 36/40 [00:32<00:03,  1.10it/s, loss=1.63]
+Validation: 0it [00:00, ?it/s][A
+Validation:   0%|          | 0/4 [00:00<?, ?it/s][A
+Validation DataLoader 0:   0%|          | 0/4 [00:00<?, ?it/s][AError executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/users/oince22/vwsd/scripts/clip_ft_pred.py", line 39, in main
+    results = trainer.fit(experiment, datamodule=train_dm)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 582, in fit
+    call._call_and_handle_interrupt(
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 624, in _fit_impl
+    self._run(model, ckpt_path=self.ckpt_path)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1061, in _run
+    results = self._run_stage()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1140, in _run_stage
+    self._run_train()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1163, in _run_train
+    self.fit_loop.run()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 267, in advance
+    self._outputs = self.epoch_loop.run(self._data_fetcher)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.on_advance_end()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 251, in on_advance_end
+    self._run_validation()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 310, in _run_validation
+    self.val_loop.run()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 152, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 137, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 234, in _evaluation_step
+    output = self.trainer._call_strategy_hook(hook_name, *kwargs.values())
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1443, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 390, in validation_step
+    return self.model.validation_step(*args, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/experiment.py", line 44, in validation_step
+    loss = F.cross_entropy(prob, labels)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/torch/nn/functional.py", line 3014, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+RuntimeError: 0D or 1D target tensor expected, multi-target not supported
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
+Epoch 0:  90%|█████████ | 36/40 [00:41<00:04,  1.16s/it, loss=1.63]
+
+                                                              [A

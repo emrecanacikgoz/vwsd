@@ -1,0 +1,28 @@
+=======================
+Loading Anaconda Module...
+"data":    {'debug': False, 'batch_size': 1, 'source': 'CNET', 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}
+"model":   {'load': True, 'name': 'CLIPFinetune'}
+"output":  clip_ft_cnet_2.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 10, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+{'load': True, 'name': 'CLIPFinetune'}
+/scratch/users/oince22/vwsd/scripts
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/users/oince22/vwsd/scripts/clip_ft_pred.py", line 33, in main
+    train_dm.setup(stage='fit')
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/data.py", line 210, in setup
+    self.data = self.load_split(split='train')
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/data.py", line 224, in load_split
+    return VWSDDataset(
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/data.py", line 32, in __init__
+    self._load_data()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/data.py", line 58, in _load_data
+    prompt = self._clean_scraped_data(scraped_item, complete_context, source=self.source)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/data.py", line 109, in _clean_scraped_data
+    info_1, info_2 = cnet2str(obj_1, first_token), cnet2str(obj_2, second_token)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/util.py", line 90, in cnet2str
+    info += f"{cnet_context} related to"
+NameError: name 'cnet_context' is not defined
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

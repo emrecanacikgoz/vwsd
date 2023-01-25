@@ -1,0 +1,6 @@
+=======================
+Loading Anaconda Module...
+  File "/scratch/users/oince22/vwsd/scripts_google/clip_ft_pred.py", line 32
+    print("\nData config", f"{config["data"]}", "\n")
+                                      ^^^^
+SyntaxError: f-string: unmatched '['

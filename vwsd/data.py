@@ -7,51 +7,136 @@ from functools import wraps
 from tqdm import tqdm
 from PIL import Image
 import torch
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset, DataLoader, random_split
 from transformers import AutoTokenizer
 import pytorch_lightning as pl
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+Image.MAX_IMAGE_PIXELS = None
 
-from .util import process_path
+from .util import process_path, clean_text, cnet2str
 
 
 ROOT = osp.abspath(osp.join(osp.dirname(osp.abspath(__file__)), '..'))
 
 
 class VWSDDataset(Dataset):
-    def __init__(self, root, split, transform=None, tokenizer=None, **kwargs):
+    def __init__(self, root, split, transform=None, tokenizer=None, source="GOOGLE", debug=False, **kwargs):
         super().__init__()
         self.root = process_path(root)
         self.split = split
         self.transform = transform
         self.tokenizer = tokenizer
+        #print("Dataset:", source)
+        self.source = source
+        self.debug = debug
         self._load_data()
     
     def _load_data(self):
-        assert self.split == 'trial'
-        data_file = osp.join(self.root, 'trial.data.txt')
+        assert self.split in ['trial', 'train']
+        if self.split == 'trial':
+            data_file = osp.join(self.root, 'trial.data.v1.txt')
+            label_file = osp.join(self.root, 'trial.gold.v1.txt')
+        elif self.split == 'train':
+            data_file = osp.join(self.root, 'train.data.v1.txt')
+            label_file = osp.join(self.root, 'train.gold.v1.txt')    
+
         with open(data_file, 'r') as f:
             items = [line.strip().split('\t') for line in f.readlines()]
             
-        label_file = osp.join(self.root, 'trial.gold.txt')
         with open(label_file, 'r') as f:
             labels = [line.strip() for line in f.readlines()]
 
+        self.items = []
+        scraped_items = self._read_scraped_data()
+
         assert len(items) == len(labels)
-        self.items = list()
-        for inputs, label in zip(items, labels):
+        if self.debug:
+            items, labels, scraped_items = items[:40], labels[:40], scraped_items[:40]
+
+        for inputs, label, scraped_item in zip(items, labels, scraped_items):
+            complete_context = f"{inputs[0]} {inputs[1]}"
+            prompt = self._clean_scraped_data(scraped_item, complete_context)
+            
             self.items.append({
                 'word': inputs[0],
                 'context': inputs[1],
                 'images': inputs[2:],
                 'gold': label,
+                'prompt': prompt,
             })
 
+        for item in self.items[:20]:
+            word, context, prompt = item["word"], item["context"], item["prompt"]
+            print(f"\nword: {word}")
+            print(f"context: {context}")
+            print(f"prompt: {prompt}")
+
+
+    def _read_scraped_data(self):
+        print(os.getcwd())
+        if self.split == "train":
+            file_path = "../vwsd/data.json"
+        elif self.split == "trial":
+            file_path = "../vwsd/data_trial.json"
+        with open(file_path, 'r') as scraped_data:
+            scraped_items = list(scraped_data)
+        
+        return [json.loads(item) for item in scraped_items]
+
+
+    def _clean_scraped_data(self, scraped_item, context):
+        assert self.source in ["GOOGLE", "CNET", "BOTH"], "The used data source does not exist"
+
+        #print("Clean scraped data:", self.source)
+
+        obj, obj_1, obj_2, google = scraped_item["all"], scraped_item["first"], scraped_item["second"], scraped_item["google"]
+        CLIP_CONTEXT_LENGTH = 76 - len(context.split()) - 1
+        
+        
+        if self.source == "GOOGLE":
+            if len(google) == 0:
+                print("Scraped google data is empty")
+                info = ""
+            elif isinstance(google[0], dict) and "snippets" in google[0]:
+                info = clean_text(cnet2str(google[0]["snippets"]))
+                if info.count(' ') > CLIP_CONTEXT_LENGTH - 1:
+                    truncated_info_tokens = info.split()[:CLIP_CONTEXT_LENGTH]
+                    info =  " ".join(truncated_info_tokens)
+            else:
+                info = " . ".join([s for s in google if isinstance(s, str)])
+                info = clean_text(info)
+                truncated_info_tokens = info.split()[:CLIP_CONTEXT_LENGTH]
+                info = " ".join(truncated_info_tokens)
+        
+        
+        if self.source == "CNET":
+            # meaning that we could not find the whole context in ConceptNet
+            if "error" in obj and obj["error"]["status"] == 404: 
+                first_token, second_token = context.split()[0], context.split()[1]
+                info_1, info_2 = cnet2str(obj_1, first_token), cnet2str(obj_2, second_token)
+                info = info_1 + " " + info_2
+                info = clean_text(info)
+                truncated_info_tokens = info.split()[:CLIP_CONTEXT_LENGTH]
+                info = " ".join(truncated_info_tokens)
+            else:
+                info = clean_text(cnet2str(obj, context))
+                truncated_info_tokens = info.split()[:CLIP_CONTEXT_LENGTH]
+                info = " ".join(truncated_info_tokens)
+
+        prompt = f"{context} . {info}"
+        
+        return prompt
+
     def _read_image(self, file_name):
-        file_path = osp.join(self.root, 'all_images', file_name)
+        if self.split == "train":
+            file_path = osp.join(self.root, 'train_images_v1', file_name)
+        elif self.split == "trial":
+            file_path = osp.join(self.root, 'trial_images_v1', file_name)
         return Image.open(file_path)
 
     def _tokenize(self, text):
-        return self.tokenizer(text, return_tensors='pt', padding=True)
+        return self.tokenizer(text, return_tensors='pt', max_length=77, padding="max_length", truncation=True)
 
     def __len__(self):
         return len(self.items)
@@ -75,7 +160,7 @@ class VWSDDataset(Dataset):
             context = self._tokenize(item['context'])
             context_ids = context['input_ids']
             context_mask = context['attention_mask']
-            prompt = self._tokenize(item['word'] + ' ' + item['context'])
+            prompt = self._tokenize(item['prompt'])
             prompt_ids = prompt['input_ids']
             prompt_mask = prompt['attention_mask']
 
@@ -101,10 +186,12 @@ class VWSDDataModule(pl.LightningDataModule):
         self,
         train_dir=None,
         trial_dir=None,
+        debug=False,
         batch_size=8,
         num_workers=0,
         transform=None,
         tokenizer=None,
+        source="CNET"
     ):
         super().__init__()
         self.train_dir = self.trial_dir = None
@@ -116,6 +203,8 @@ class VWSDDataModule(pl.LightningDataModule):
         self.num_workers = num_workers
         self.transform = transform
         self.tokenizer = tokenizer
+        self.debug = debug
+        self.source = source
 
     @property
     def pad_token_id(self):
@@ -126,7 +215,16 @@ class VWSDDataModule(pl.LightningDataModule):
 
     def setup(self, stage='fit'):
         if stage == 'fit':
-            raise NotImplementedError('Training phase is not implemented yet.')
+            self.data = self.load_split(split='train')
+            train_size = int(0.9 * len(self.data))
+
+            self.train_data, self.val_data = random_split(self.data, [train_size, len(self.data)-train_size])
+
+        if stage == 'validate':
+            self.data = self.load_split(split='train')
+            train_size = int(0.9 * len(self.data))
+
+            self.train_data, self.val_data = random_split(self.data, [train_size, len(self.data)-train_size])
         
         if stage == 'predict' or stage == 'test':
             self.trial_data = self.load_split(split='trial')
@@ -142,6 +240,28 @@ class VWSDDataModule(pl.LightningDataModule):
             split=split,
             transform=self.transform,
             tokenizer=self.tokenizer,
+            debug=self.debug,
+            source=self.source
+        )
+
+    def train_dataloader(self):
+        return DataLoader(
+            self.train_data,
+            batch_size=self.batch_size,
+            shuffle=True,
+            num_workers=self.num_workers,
+            pin_memory=False,
+            collate_fn=clip_collate_fn(self.pad_token_id),
+        )
+    
+    def val_dataloader(self):
+        return DataLoader(
+            self.val_data,
+            batch_size=self.batch_size,
+            shuffle=False,
+            num_workers=self.num_workers,
+            pin_memory=False,
+            collate_fn=clip_collate_fn(self.pad_token_id),
         )
 
     def test_dataloader(self):

@@ -1,0 +1,870 @@
+=======================
+Loading Anaconda Module...
+"data":    {'batch_size': 4, 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-trial-v1/trial_v1'}
+"model":   {'name': 'CLIPFinetune'}
+"output":  clip_ft.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 15, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+/scratch/users/oince22/vwsd/scripts
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Config: "data":    {'batch_size': 4, 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-trial-v1/trial_v1'}
+"model":   {'name': 'CLIPFinetune'}
+"output":  /scratch/users/oince22/vwsd/scripts/clip_ft.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 15, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+/scratch/users/oince22/vwsd/scripts
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/3218 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/3218 [00:00<?, ?it/s] /kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (89550550 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 1/3218 [00:13<11:37:46, 13.01s/it]Epoch 0:   0%|          | 1/3218 [00:13<11:37:52, 13.02s/it, loss=1.46]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 2/3218 [00:13<6:07:24,  6.85s/it, loss=1.46] Epoch 0:   0%|          | 2/3218 [00:13<6:07:56,  6.86s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 3/3218 [00:14<4:16:14,  4.78s/it, loss=1.58]Epoch 0:   0%|          | 3/3218 [00:14<4:16:15,  4.78s/it, loss=1.63]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 4/3218 [00:14<3:20:31,  3.74s/it, loss=1.63]Epoch 0:   0%|          | 4/3218 [00:14<3:20:37,  3.75s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 5/3218 [00:15<2:46:51,  3.12s/it, loss=1.59]Epoch 0:   0%|          | 5/3218 [00:15<2:46:56,  3.12s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 6/3218 [00:16<2:24:49,  2.71s/it, loss=1.58]Epoch 0:   0%|          | 6/3218 [00:16<2:24:52,  2.71s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 7/3218 [00:16<2:09:16,  2.42s/it, loss=1.56]Epoch 0:   0%|          | 7/3218 [00:16<2:09:22,  2.42s/it, loss=1.6] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 8/3218 [00:17<1:57:48,  2.20s/it, loss=1.6]Epoch 0:   0%|          | 8/3218 [00:17<1:57:50,  2.20s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 9/3218 [00:18<1:48:45,  2.03s/it, loss=1.58]Epoch 0:   0%|          | 9/3218 [00:18<1:48:47,  2.03s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 10/3218 [00:18<1:41:24,  1.90s/it, loss=1.57]Epoch 0:   0%|          | 10/3218 [00:18<1:41:25,  1.90s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 11/3218 [00:21<1:45:19,  1.97s/it, loss=1.56]Epoch 0:   0%|          | 11/3218 [00:21<1:45:19,  1.97s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 12/3218 [00:22<1:39:27,  1.86s/it, loss=1.55]Epoch 0:   0%|          | 12/3218 [00:22<1:39:28,  1.86s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 13/3218 [00:22<1:34:20,  1.77s/it, loss=1.54]Epoch 0:   0%|          | 13/3218 [00:22<1:34:22,  1.77s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 14/3218 [00:25<1:38:21,  1.84s/it, loss=1.57]Epoch 0:   0%|          | 14/3218 [00:25<1:38:23,  1.84s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 15/3218 [00:26<1:34:05,  1.76s/it, loss=1.57]Epoch 0:   0%|          | 15/3218 [00:26<1:34:06,  1.76s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   0%|          | 16/3218 [00:27<1:32:53,  1.74s/it, loss=1.56]Epoch 0:   0%|          | 16/3218 [00:27<1:32:53,  1.74s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 17/3218 [00:28<1:29:24,  1.68s/it, loss=1.56]Epoch 0:   1%|          | 17/3218 [00:28<1:29:25,  1.68s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 18/3218 [00:29<1:26:24,  1.62s/it, loss=1.55]Epoch 0:   1%|          | 18/3218 [00:29<1:26:25,  1.62s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 19/3218 [00:34<1:36:22,  1.81s/it, loss=1.55]Epoch 0:   1%|          | 19/3218 [00:34<1:36:23,  1.81s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 20/3218 [00:35<1:33:21,  1.75s/it, loss=1.56]Epoch 0:   1%|          | 20/3218 [00:35<1:33:22,  1.75s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 21/3218 [00:35<1:30:51,  1.71s/it, loss=1.57]Epoch 0:   1%|          | 21/3218 [00:35<1:30:52,  1.71s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 22/3218 [00:37<1:30:22,  1.70s/it, loss=1.57]Epoch 0:   1%|          | 22/3218 [00:37<1:30:22,  1.70s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 23/3218 [00:37<1:27:57,  1.65s/it, loss=1.56]Epoch 0:   1%|          | 23/3218 [00:38<1:27:58,  1.65s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 24/3218 [00:41<1:30:59,  1.71s/it, loss=1.55]Epoch 0:   1%|          | 24/3218 [00:41<1:31:01,  1.71s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 25/3218 [00:41<1:28:42,  1.67s/it, loss=1.55]Epoch 0:   1%|          | 25/3218 [00:41<1:28:43,  1.67s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 26/3218 [00:42<1:26:34,  1.63s/it, loss=1.54]Epoch 0:   1%|          | 26/3218 [00:42<1:26:35,  1.63s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 27/3218 [00:44<1:28:34,  1.67s/it, loss=1.54]Epoch 0:   1%|          | 27/3218 [00:44<1:28:35,  1.67s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 28/3218 [00:45<1:26:34,  1.63s/it, loss=1.52]Epoch 0:   1%|          | 28/3218 [00:45<1:26:35,  1.63s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 29/3218 [00:47<1:27:45,  1.65s/it, loss=1.54]Epoch 0:   1%|          | 29/3218 [00:47<1:27:46,  1.65s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 30/3218 [00:48<1:25:57,  1.62s/it, loss=1.54]Epoch 0:   1%|          | 30/3218 [00:48<1:25:58,  1.62s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 31/3218 [00:49<1:24:14,  1.59s/it, loss=1.54]Epoch 0:   1%|          | 31/3218 [00:49<1:24:15,  1.59s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 32/3218 [00:51<1:25:23,  1.61s/it, loss=1.55]Epoch 0:   1%|          | 32/3218 [00:51<1:25:24,  1.61s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 33/3218 [00:52<1:23:48,  1.58s/it, loss=1.55]Epoch 0:   1%|          | 33/3218 [00:52<1:23:49,  1.58s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 34/3218 [00:54<1:25:21,  1.61s/it, loss=1.53]Epoch 0:   1%|          | 34/3218 [00:54<1:25:21,  1.61s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 35/3218 [00:55<1:23:49,  1.58s/it, loss=1.53]Epoch 0:   1%|          | 35/3218 [00:55<1:23:50,  1.58s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 36/3218 [00:55<1:22:25,  1.55s/it, loss=1.53]Epoch 0:   1%|          | 36/3218 [00:55<1:22:25,  1.55s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 37/3218 [00:56<1:21:08,  1.53s/it, loss=1.52]Epoch 0:   1%|          | 37/3218 [00:56<1:21:08,  1.53s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 38/3218 [00:57<1:19:56,  1.51s/it, loss=1.54]Epoch 0:   1%|          | 38/3218 [00:57<1:19:57,  1.51s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 39/3218 [01:01<1:23:58,  1.58s/it, loss=1.53]Epoch 0:   1%|          | 39/3218 [01:01<1:23:58,  1.58s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|          | 40/3218 [01:02<1:22:41,  1.56s/it, loss=1.52]Epoch 0:   1%|          | 40/3218 [01:02<1:22:42,  1.56s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 41/3218 [01:03<1:21:27,  1.54s/it, loss=1.51]Epoch 0:   1%|▏         | 41/3218 [01:03<1:21:28,  1.54s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 42/3218 [01:03<1:20:16,  1.52s/it, loss=1.53]Epoch 0:   1%|▏         | 42/3218 [01:03<1:20:17,  1.52s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 43/3218 [01:04<1:19:10,  1.50s/it, loss=1.53]Epoch 0:   1%|▏         | 43/3218 [01:04<1:19:11,  1.50s/it, loss=1.54]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (102080000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 44/3218 [01:08<1:22:08,  1.55s/it, loss=1.54]Epoch 0:   1%|▏         | 44/3218 [01:08<1:22:09,  1.55s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 45/3218 [01:08<1:21:03,  1.53s/it, loss=1.55]Epoch 0:   1%|▏         | 45/3218 [01:08<1:21:03,  1.53s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 46/3218 [01:09<1:19:58,  1.51s/it, loss=1.55]Epoch 0:   1%|▏         | 46/3218 [01:09<1:19:59,  1.51s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 47/3218 [01:10<1:18:58,  1.49s/it, loss=1.55]Epoch 0:   1%|▏         | 47/3218 [01:10<1:18:58,  1.49s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   1%|▏         | 48/3218 [01:10<1:18:01,  1.48s/it, loss=1.55]Epoch 0:   1%|▏         | 48/3218 [01:10<1:18:02,  1.48s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 49/3218 [01:12<1:18:01,  1.48s/it, loss=1.54]Epoch 0:   2%|▏         | 49/3218 [01:12<1:18:01,  1.48s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 50/3218 [01:20<1:25:11,  1.61s/it, loss=1.55]Epoch 0:   2%|▏         | 50/3218 [01:20<1:25:11,  1.61s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 51/3218 [01:21<1:24:10,  1.59s/it, loss=1.55]Epoch 0:   2%|▏         | 51/3218 [01:21<1:24:10,  1.59s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 52/3218 [01:21<1:23:11,  1.58s/it, loss=1.55]Epoch 0:   2%|▏         | 52/3218 [01:21<1:23:11,  1.58s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 53/3218 [01:22<1:22:15,  1.56s/it, loss=1.55]Epoch 0:   2%|▏         | 53/3218 [01:22<1:22:15,  1.56s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 54/3218 [01:23<1:21:19,  1.54s/it, loss=1.56]Epoch 0:   2%|▏         | 54/3218 [01:23<1:21:20,  1.54s/it, loss=1.56]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (102080000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 55/3218 [01:26<1:23:17,  1.58s/it, loss=1.56]Epoch 0:   2%|▏         | 55/3218 [01:26<1:23:18,  1.58s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 56/3218 [01:27<1:22:22,  1.56s/it, loss=1.56]Epoch 0:   2%|▏         | 56/3218 [01:27<1:22:22,  1.56s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 57/3218 [01:28<1:21:32,  1.55s/it, loss=1.58]Epoch 0:   2%|▏         | 57/3218 [01:28<1:21:33,  1.55s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 58/3218 [01:28<1:20:43,  1.53s/it, loss=1.57]Epoch 0:   2%|▏         | 58/3218 [01:28<1:20:43,  1.53s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 59/3218 [01:29<1:19:54,  1.52s/it, loss=1.57]Epoch 0:   2%|▏         | 59/3218 [01:29<1:19:55,  1.52s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 60/3218 [01:34<1:23:14,  1.58s/it, loss=1.57]Epoch 0:   2%|▏         | 60/3218 [01:34<1:23:14,  1.58s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 61/3218 [01:35<1:22:24,  1.57s/it, loss=1.57]Epoch 0:   2%|▏         | 61/3218 [01:35<1:22:24,  1.57s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 62/3218 [01:36<1:21:35,  1.55s/it, loss=1.55]Epoch 0:   2%|▏         | 62/3218 [01:36<1:21:35,  1.55s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 63/3218 [01:36<1:20:50,  1.54s/it, loss=1.56]Epoch 0:   2%|▏         | 63/3218 [01:36<1:20:50,  1.54s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 64/3218 [01:37<1:20:06,  1.52s/it, loss=1.56]Epoch 0:   2%|▏         | 64/3218 [01:37<1:20:06,  1.52s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 65/3218 [01:41<1:21:40,  1.55s/it, loss=1.55]Epoch 0:   2%|▏         | 65/3218 [01:41<1:21:41,  1.55s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 66/3218 [01:41<1:20:56,  1.54s/it, loss=1.56]Epoch 0:   2%|▏         | 66/3218 [01:41<1:20:56,  1.54s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 67/3218 [01:42<1:20:11,  1.53s/it, loss=1.56]Epoch 0:   2%|▏         | 67/3218 [01:42<1:20:11,  1.53s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 68/3218 [01:45<1:21:23,  1.55s/it, loss=1.57]Epoch 0:   2%|▏         | 68/3218 [01:45<1:21:23,  1.55s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 69/3218 [01:46<1:20:40,  1.54s/it, loss=1.57]Epoch 0:   2%|▏         | 69/3218 [01:46<1:20:40,  1.54s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 70/3218 [01:46<1:19:59,  1.52s/it, loss=1.56]Epoch 0:   2%|▏         | 70/3218 [01:46<1:19:59,  1.52s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 71/3218 [01:47<1:19:20,  1.51s/it, loss=1.56]Epoch 0:   2%|▏         | 71/3218 [01:47<1:19:20,  1.51s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 72/3218 [01:48<1:18:40,  1.50s/it, loss=1.55]Epoch 0:   2%|▏         | 72/3218 [01:48<1:18:41,  1.50s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 73/3218 [01:52<1:20:50,  1.54s/it, loss=1.56]Epoch 0:   2%|▏         | 73/3218 [01:52<1:20:51,  1.54s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 74/3218 [01:53<1:20:13,  1.53s/it, loss=1.55]Epoch 0:   2%|▏         | 74/3218 [01:53<1:20:13,  1.53s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 75/3218 [01:53<1:19:34,  1.52s/it, loss=1.56]Epoch 0:   2%|▏         | 75/3218 [01:53<1:19:34,  1.52s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 76/3218 [01:54<1:18:56,  1.51s/it, loss=1.56]Epoch 0:   2%|▏         | 76/3218 [01:54<1:18:56,  1.51s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 77/3218 [01:55<1:18:20,  1.50s/it, loss=1.55]Epoch 0:   2%|▏         | 77/3218 [01:55<1:18:20,  1.50s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 78/3218 [01:59<1:20:07,  1.53s/it, loss=1.55]Epoch 0:   2%|▏         | 78/3218 [01:59<1:20:07,  1.53s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 79/3218 [02:00<1:19:30,  1.52s/it, loss=1.55]Epoch 0:   2%|▏         | 79/3218 [02:00<1:19:31,  1.52s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   2%|▏         | 80/3218 [02:00<1:18:54,  1.51s/it, loss=1.55]Epoch 0:   2%|▏         | 80/3218 [02:00<1:18:54,  1.51s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 81/3218 [02:01<1:18:19,  1.50s/it, loss=1.55]Epoch 0:   3%|▎         | 81/3218 [02:01<1:18:19,  1.50s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 82/3218 [02:01<1:17:45,  1.49s/it, loss=1.55]Epoch 0:   3%|▎         | 82/3218 [02:02<1:17:45,  1.49s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 83/3218 [02:03<1:17:53,  1.49s/it, loss=1.54]Epoch 0:   3%|▎         | 83/3218 [02:03<1:17:54,  1.49s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 84/3218 [02:04<1:17:20,  1.48s/it, loss=1.53]Epoch 0:   3%|▎         | 84/3218 [02:04<1:17:20,  1.48s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 85/3218 [02:05<1:16:47,  1.47s/it, loss=1.54]Epoch 0:   3%|▎         | 85/3218 [02:05<1:16:48,  1.47s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 86/3218 [02:05<1:16:16,  1.46s/it, loss=1.53]Epoch 0:   3%|▎         | 86/3218 [02:05<1:16:16,  1.46s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 87/3218 [02:06<1:15:46,  1.45s/it, loss=1.53]Epoch 0:   3%|▎         | 87/3218 [02:06<1:15:46,  1.45s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 88/3218 [02:11<1:17:51,  1.49s/it, loss=1.53]Epoch 0:   3%|▎         | 88/3218 [02:11<1:17:52,  1.49s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 89/3218 [02:11<1:17:20,  1.48s/it, loss=1.52]Epoch 0:   3%|▎         | 89/3218 [02:11<1:17:20,  1.48s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 90/3218 [02:12<1:16:48,  1.47s/it, loss=1.52]Epoch 0:   3%|▎         | 90/3218 [02:12<1:16:48,  1.47s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 91/3218 [02:13<1:16:18,  1.46s/it, loss=1.53]Epoch 0:   3%|▎         | 91/3218 [02:13<1:16:19,  1.46s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 92/3218 [02:13<1:15:48,  1.46s/it, loss=1.53]Epoch 0:   3%|▎         | 92/3218 [02:13<1:15:48,  1.46s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 93/3218 [02:16<1:16:17,  1.46s/it, loss=1.52]Epoch 0:   3%|▎         | 93/3218 [02:16<1:16:17,  1.46s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 94/3218 [02:16<1:15:47,  1.46s/it, loss=1.52]Epoch 0:   3%|▎         | 94/3218 [02:16<1:15:47,  1.46s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 95/3218 [02:17<1:15:19,  1.45s/it, loss=1.51]Epoch 0:   3%|▎         | 95/3218 [02:17<1:15:19,  1.45s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 96/3218 [02:18<1:14:51,  1.44s/it, loss=1.52]Epoch 0:   3%|▎         | 96/3218 [02:18<1:14:52,  1.44s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 97/3218 [02:18<1:14:26,  1.43s/it, loss=1.5]Epoch 0:   3%|▎         | 97/3218 [02:18<1:14:26,  1.43s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 98/3218 [02:20<1:14:17,  1.43s/it, loss=1.5]Epoch 0:   3%|▎         | 98/3218 [02:20<1:14:18,  1.43s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 99/3218 [02:20<1:13:51,  1.42s/it, loss=1.5]Epoch 0:   3%|▎         | 99/3218 [02:20<1:13:52,  1.42s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 100/3218 [02:21<1:13:30,  1.41s/it, loss=1.5]Epoch 0:   3%|▎         | 100/3218 [02:21<1:13:31,  1.41s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 101/3218 [02:22<1:13:05,  1.41s/it, loss=1.5]Epoch 0:   3%|▎         | 101/3218 [02:22<1:13:05,  1.41s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 102/3218 [02:22<1:12:40,  1.40s/it, loss=1.5]Epoch 0:   3%|▎         | 102/3218 [02:22<1:12:40,  1.40s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 103/3218 [02:24<1:12:47,  1.40s/it, loss=1.52]Epoch 0:   3%|▎         | 103/3218 [02:24<1:12:47,  1.40s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 104/3218 [02:25<1:12:22,  1.39s/it, loss=1.51]Epoch 0:   3%|▎         | 104/3218 [02:25<1:12:23,  1.39s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 105/3218 [02:25<1:11:59,  1.39s/it, loss=1.5]Epoch 0:   3%|▎         | 105/3218 [02:25<1:11:59,  1.39s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (178315136 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Epoch 0:   3%|▎         | 106/3218 [02:26<1:11:36,  1.38s/it, loss=1.5]Epoch 0:   3%|▎         | 106/3218 [02:26<1:11:36,  1.38s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 107/3218 [02:26<1:11:12,  1.37s/it, loss=1.51]Epoch 0:   3%|▎         | 107/3218 [02:26<1:11:13,  1.37s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 108/3218 [02:28<1:11:06,  1.37s/it, loss=1.51]Epoch 0:   3%|▎         | 108/3218 [02:28<1:11:06,  1.37s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 109/3218 [02:28<1:10:44,  1.37s/it, loss=1.51]Epoch 0:   3%|▎         | 109/3218 [02:28<1:10:44,  1.37s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 110/3218 [02:30<1:11:05,  1.37s/it, loss=1.51]Epoch 0:   3%|▎         | 110/3218 [02:30<1:11:05,  1.37s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 111/3218 [02:31<1:10:44,  1.37s/it, loss=1.5]Epoch 0:   3%|▎         | 111/3218 [02:31<1:10:44,  1.37s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   3%|▎         | 112/3218 [02:38<1:13:23,  1.42s/it, loss=1.5]Epoch 0:   3%|▎         | 112/3218 [02:38<1:13:23,  1.42s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 113/3218 [02:39<1:13:00,  1.41s/it, loss=1.5]Epoch 0:   4%|▎         | 113/3218 [02:39<1:13:00,  1.41s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 114/3218 [02:40<1:12:38,  1.40s/it, loss=1.53]Epoch 0:   4%|▎         | 114/3218 [02:40<1:12:38,  1.40s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 115/3218 [02:40<1:12:16,  1.40s/it, loss=1.54]Epoch 0:   4%|▎         | 115/3218 [02:40<1:12:16,  1.40s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 116/3218 [02:41<1:11:54,  1.39s/it, loss=1.54]Epoch 0:   4%|▎         | 116/3218 [02:41<1:11:54,  1.39s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 117/3218 [02:43<1:12:09,  1.40s/it, loss=1.54]Epoch 0:   4%|▎         | 117/3218 [02:43<1:12:09,  1.40s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 118/3218 [02:44<1:11:51,  1.39s/it, loss=1.55]Epoch 0:   4%|▎         | 118/3218 [02:44<1:11:51,  1.39s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 119/3218 [02:44<1:11:30,  1.38s/it, loss=1.56]Epoch 0:   4%|▎         | 119/3218 [02:44<1:11:30,  1.38s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▎         | 120/3218 [02:45<1:11:10,  1.38s/it, loss=1.58]Epoch 0:   4%|▎         | 120/3218 [02:45<1:11:10,  1.38s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 121/3218 [02:46<1:10:50,  1.37s/it, loss=1.58]Epoch 0:   4%|▍         | 121/3218 [02:46<1:10:51,  1.37s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 122/3218 [02:49<1:11:40,  1.39s/it, loss=1.58]Epoch 0:   4%|▍         | 122/3218 [02:49<1:11:40,  1.39s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 123/3218 [02:50<1:11:19,  1.38s/it, loss=1.57]Epoch 0:   4%|▍         | 123/3218 [02:50<1:11:19,  1.38s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 124/3218 [02:50<1:10:59,  1.38s/it, loss=1.57]Epoch 0:   4%|▍         | 124/3218 [02:50<1:10:59,  1.38s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 125/3218 [02:51<1:10:39,  1.37s/it, loss=1.58]Epoch 0:   4%|▍         | 125/3218 [02:51<1:10:39,  1.37s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 126/3218 [02:51<1:10:20,  1.36s/it, loss=1.58]Epoch 0:   4%|▍         | 126/3218 [02:51<1:10:20,  1.36s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 127/3218 [02:53<1:10:18,  1.36s/it, loss=1.56]Epoch 0:   4%|▍         | 127/3218 [02:53<1:10:18,  1.36s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 128/3218 [02:53<1:09:59,  1.36s/it, loss=1.56]Epoch 0:   4%|▍         | 128/3218 [02:53<1:09:59,  1.36s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 129/3218 [02:54<1:09:40,  1.35s/it, loss=1.56]Epoch 0:   4%|▍         | 129/3218 [02:54<1:09:40,  1.35s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 130/3218 [02:55<1:09:22,  1.35s/it, loss=1.57]Epoch 0:   4%|▍         | 130/3218 [02:55<1:09:22,  1.35s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 131/3218 [02:55<1:09:04,  1.34s/it, loss=1.57]Epoch 0:   4%|▍         | 131/3218 [02:55<1:09:04,  1.34s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 132/3218 [02:59<1:09:53,  1.36s/it, loss=1.57]Epoch 0:   4%|▍         | 132/3218 [02:59<1:09:53,  1.36s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 133/3218 [02:59<1:09:35,  1.35s/it, loss=1.58]Epoch 0:   4%|▍         | 133/3218 [03:00<1:09:35,  1.35s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 134/3218 [03:00<1:09:17,  1.35s/it, loss=1.56]Epoch 0:   4%|▍         | 134/3218 [03:00<1:09:17,  1.35s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 135/3218 [03:01<1:09:00,  1.34s/it, loss=1.55]Epoch 0:   4%|▍         | 135/3218 [03:01<1:09:00,  1.34s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 136/3218 [03:01<1:08:42,  1.34s/it, loss=1.53]Epoch 0:   4%|▍         | 136/3218 [03:02<1:08:48,  1.34s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 137/3218 [03:03<1:08:45,  1.34s/it, loss=1.53]Epoch 0:   4%|▍         | 137/3218 [03:03<1:08:45,  1.34s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 138/3218 [03:04<1:08:28,  1.33s/it, loss=1.53]Epoch 0:   4%|▍         | 138/3218 [03:04<1:08:28,  1.33s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 139/3218 [03:04<1:08:12,  1.33s/it, loss=1.52]Epoch 0:   4%|▍         | 139/3218 [03:04<1:08:12,  1.33s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 140/3218 [03:05<1:07:56,  1.32s/it, loss=1.51]Epoch 0:   4%|▍         | 140/3218 [03:05<1:07:56,  1.32s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 141/3218 [03:06<1:07:40,  1.32s/it, loss=1.5]Epoch 0:   4%|▍         | 141/3218 [03:06<1:07:40,  1.32s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 142/3218 [03:08<1:08:03,  1.33s/it, loss=1.51]Epoch 0:   4%|▍         | 142/3218 [03:08<1:08:03,  1.33s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 143/3218 [03:09<1:07:47,  1.32s/it, loss=1.53]Epoch 0:   4%|▍         | 143/3218 [03:09<1:07:47,  1.32s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   4%|▍         | 144/3218 [03:09<1:07:31,  1.32s/it, loss=1.54]Epoch 0:   4%|▍         | 144/3218 [03:09<1:07:31,  1.32s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 145/3218 [03:10<1:07:16,  1.31s/it, loss=1.54]Epoch 0:   5%|▍         | 145/3218 [03:10<1:07:16,  1.31s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 146/3218 [03:11<1:07:00,  1.31s/it, loss=1.54]Epoch 0:   5%|▍         | 146/3218 [03:11<1:07:00,  1.31s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 147/3218 [03:12<1:06:52,  1.31s/it, loss=1.55]Epoch 0:   5%|▍         | 147/3218 [03:12<1:06:52,  1.31s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 148/3218 [03:12<1:06:37,  1.30s/it, loss=1.55]Epoch 0:   5%|▍         | 148/3218 [03:12<1:06:37,  1.30s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 149/3218 [03:15<1:07:02,  1.31s/it, loss=1.57]Epoch 0:   5%|▍         | 149/3218 [03:15<1:07:02,  1.31s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 150/3218 [03:15<1:06:46,  1.31s/it, loss=1.56]Epoch 0:   5%|▍         | 150/3218 [03:15<1:06:46,  1.31s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 151/3218 [03:16<1:06:31,  1.30s/it, loss=1.57]Epoch 0:   5%|▍         | 151/3218 [03:16<1:06:32,  1.30s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 152/3218 [03:17<1:06:17,  1.30s/it, loss=1.57]Epoch 0:   5%|▍         | 152/3218 [03:17<1:06:17,  1.30s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 153/3218 [03:17<1:06:03,  1.29s/it, loss=1.56]Epoch 0:   5%|▍         | 153/3218 [03:17<1:06:03,  1.29s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 154/3218 [03:19<1:06:10,  1.30s/it, loss=1.57]Epoch 0:   5%|▍         | 154/3218 [03:19<1:06:10,  1.30s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 155/3218 [03:20<1:05:56,  1.29s/it, loss=1.57]Epoch 0:   5%|▍         | 155/3218 [03:20<1:05:56,  1.29s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 156/3218 [03:20<1:05:42,  1.29s/it, loss=1.59]Epoch 0:   5%|▍         | 156/3218 [03:20<1:05:43,  1.29s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 157/3218 [03:22<1:05:39,  1.29s/it, loss=1.59]Epoch 0:   5%|▍         | 157/3218 [03:22<1:05:39,  1.29s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 158/3218 [03:22<1:05:25,  1.28s/it, loss=1.59]Epoch 0:   5%|▍         | 158/3218 [03:22<1:05:25,  1.28s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 159/3218 [03:23<1:05:11,  1.28s/it, loss=1.59]Epoch 0:   5%|▍         | 159/3218 [03:23<1:05:11,  1.28s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▍         | 160/3218 [03:25<1:05:29,  1.28s/it, loss=1.59]Epoch 0:   5%|▍         | 160/3218 [03:25<1:05:29,  1.28s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 161/3218 [03:26<1:05:16,  1.28s/it, loss=1.59]Epoch 0:   5%|▌         | 161/3218 [03:26<1:05:16,  1.28s/it, loss=1.6] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 162/3218 [03:27<1:05:21,  1.28s/it, loss=1.6]Epoch 0:   5%|▌         | 162/3218 [03:27<1:05:21,  1.28s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 163/3218 [03:28<1:05:08,  1.28s/it, loss=1.58]Epoch 0:   5%|▌         | 163/3218 [03:28<1:05:08,  1.28s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 164/3218 [03:29<1:04:55,  1.28s/it, loss=1.57]Epoch 0:   5%|▌         | 164/3218 [03:29<1:04:55,  1.28s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 165/3218 [03:31<1:05:20,  1.28s/it, loss=1.56]Epoch 0:   5%|▌         | 165/3218 [03:31<1:05:20,  1.28s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 166/3218 [03:32<1:05:08,  1.28s/it, loss=1.57]Epoch 0:   5%|▌         | 166/3218 [03:32<1:05:08,  1.28s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 167/3218 [03:33<1:04:55,  1.28s/it, loss=1.56]Epoch 0:   5%|▌         | 167/3218 [03:33<1:04:55,  1.28s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 168/3218 [03:34<1:04:46,  1.27s/it, loss=1.56]Epoch 0:   5%|▌         | 168/3218 [03:34<1:04:46,  1.27s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 169/3218 [03:34<1:04:34,  1.27s/it, loss=1.55]Epoch 0:   5%|▌         | 169/3218 [03:34<1:04:34,  1.27s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 170/3218 [03:36<1:04:48,  1.28s/it, loss=1.54]Epoch 0:   5%|▌         | 170/3218 [03:36<1:04:48,  1.28s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 171/3218 [03:37<1:04:35,  1.27s/it, loss=1.53]Epoch 0:   5%|▌         | 171/3218 [03:37<1:04:35,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 172/3218 [03:38<1:04:35,  1.27s/it, loss=1.53]Epoch 0:   5%|▌         | 172/3218 [03:38<1:04:35,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 173/3218 [03:40<1:04:39,  1.27s/it, loss=1.53]Epoch 0:   5%|▌         | 173/3218 [03:40<1:04:39,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 174/3218 [03:41<1:04:27,  1.27s/it, loss=1.53]Epoch 0:   5%|▌         | 174/3218 [03:41<1:04:27,  1.27s/it, loss=1.53]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (141880000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 175/3218 [03:43<1:04:38,  1.27s/it, loss=1.53]Epoch 0:   5%|▌         | 175/3218 [03:43<1:04:39,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   5%|▌         | 176/3218 [03:43<1:04:26,  1.27s/it, loss=1.51]Epoch 0:   5%|▌         | 176/3218 [03:43<1:04:26,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 177/3218 [03:50<1:06:04,  1.30s/it, loss=1.53]Epoch 0:   6%|▌         | 177/3218 [03:50<1:06:04,  1.30s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 178/3218 [03:51<1:05:51,  1.30s/it, loss=1.53]Epoch 0:   6%|▌         | 178/3218 [03:51<1:05:51,  1.30s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 179/3218 [03:52<1:05:38,  1.30s/it, loss=1.54]Epoch 0:   6%|▌         | 179/3218 [03:52<1:05:39,  1.30s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (89550550 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Epoch 0:   6%|▌         | 180/3218 [03:52<1:05:27,  1.29s/it, loss=1.55]Epoch 0:   6%|▌         | 180/3218 [03:52<1:05:27,  1.29s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 181/3218 [03:53<1:05:14,  1.29s/it, loss=1.54]Epoch 0:   6%|▌         | 181/3218 [03:53<1:05:14,  1.29s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 182/3218 [03:58<1:06:16,  1.31s/it, loss=1.53]Epoch 0:   6%|▌         | 182/3218 [03:58<1:06:16,  1.31s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 183/3218 [03:59<1:06:03,  1.31s/it, loss=1.54]Epoch 0:   6%|▌         | 183/3218 [03:59<1:06:03,  1.31s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 184/3218 [03:59<1:05:51,  1.30s/it, loss=1.54]Epoch 0:   6%|▌         | 184/3218 [03:59<1:05:51,  1.30s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 185/3218 [04:00<1:05:39,  1.30s/it, loss=1.54]Epoch 0:   6%|▌         | 185/3218 [04:00<1:05:39,  1.30s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 186/3218 [04:00<1:05:27,  1.30s/it, loss=1.53]Epoch 0:   6%|▌         | 186/3218 [04:00<1:05:27,  1.30s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 187/3218 [04:05<1:06:11,  1.31s/it, loss=1.54]Epoch 0:   6%|▌         | 187/3218 [04:05<1:06:11,  1.31s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 188/3218 [04:05<1:05:59,  1.31s/it, loss=1.54]Epoch 0:   6%|▌         | 188/3218 [04:05<1:05:59,  1.31s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 189/3218 [04:06<1:05:47,  1.30s/it, loss=1.54]Epoch 0:   6%|▌         | 189/3218 [04:06<1:05:47,  1.30s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 190/3218 [04:06<1:05:36,  1.30s/it, loss=1.55]Epoch 0:   6%|▌         | 190/3218 [04:06<1:05:36,  1.30s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 191/3218 [04:07<1:05:25,  1.30s/it, loss=1.56]Epoch 0:   6%|▌         | 191/3218 [04:07<1:05:25,  1.30s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 192/3218 [04:08<1:05:21,  1.30s/it, loss=1.58]Epoch 0:   6%|▌         | 192/3218 [04:08<1:05:22,  1.30s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (148635000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+Epoch 0:   6%|▌         | 193/3218 [04:09<1:05:10,  1.29s/it, loss=1.58]Epoch 0:   6%|▌         | 193/3218 [04:09<1:05:10,  1.29s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 194/3218 [04:10<1:04:58,  1.29s/it, loss=1.57]Epoch 0:   6%|▌         | 194/3218 [04:10<1:04:58,  1.29s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 195/3218 [04:10<1:04:47,  1.29s/it, loss=1.57]Epoch 0:   6%|▌         | 195/3218 [04:10<1:04:47,  1.29s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 196/3218 [04:11<1:04:35,  1.28s/it, loss=1.57]Epoch 0:   6%|▌         | 196/3218 [04:11<1:04:36,  1.28s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 197/3218 [04:18<1:05:57,  1.31s/it, loss=1.56]Epoch 0:   6%|▌         | 197/3218 [04:18<1:05:57,  1.31s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 198/3218 [04:18<1:05:46,  1.31s/it, loss=1.56]Epoch 0:   6%|▌         | 198/3218 [04:18<1:05:46,  1.31s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 199/3218 [04:19<1:05:35,  1.30s/it, loss=1.57]Epoch 0:   6%|▌         | 199/3218 [04:19<1:05:35,  1.30s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 200/3218 [04:20<1:05:23,  1.30s/it, loss=1.56]Epoch 0:   6%|▌         | 200/3218 [04:20<1:05:24,  1.30s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▌         | 201/3218 [04:20<1:05:12,  1.30s/it, loss=1.57]Epoch 0:   6%|▌         | 201/3218 [04:20<1:05:12,  1.30s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 202/3218 [04:22<1:05:16,  1.30s/it, loss=1.58]Epoch 0:   6%|▋         | 202/3218 [04:22<1:05:16,  1.30s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 203/3218 [04:22<1:05:05,  1.30s/it, loss=1.57]Epoch 0:   6%|▋         | 203/3218 [04:22<1:05:05,  1.30s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 204/3218 [04:23<1:04:54,  1.29s/it, loss=1.57]Epoch 0:   6%|▋         | 204/3218 [04:23<1:04:54,  1.29s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 205/3218 [04:24<1:04:44,  1.29s/it, loss=1.57]Epoch 0:   6%|▋         | 205/3218 [04:24<1:04:44,  1.29s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 206/3218 [04:24<1:04:33,  1.29s/it, loss=1.58]Epoch 0:   6%|▋         | 206/3218 [04:24<1:04:33,  1.29s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 207/3218 [04:26<1:04:33,  1.29s/it, loss=1.56]Epoch 0:   6%|▋         | 207/3218 [04:26<1:04:33,  1.29s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 208/3218 [04:27<1:04:24,  1.28s/it, loss=1.56]Epoch 0:   6%|▋         | 208/3218 [04:27<1:04:24,  1.28s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   6%|▋         | 209/3218 [04:29<1:04:33,  1.29s/it, loss=1.58]Epoch 0:   6%|▋         | 209/3218 [04:29<1:04:33,  1.29s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 210/3218 [04:29<1:04:22,  1.28s/it, loss=1.57]Epoch 0:   7%|▋         | 210/3218 [04:29<1:04:22,  1.28s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 211/3218 [04:30<1:04:11,  1.28s/it, loss=1.55]Epoch 0:   7%|▋         | 211/3218 [04:30<1:04:12,  1.28s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 212/3218 [04:31<1:04:08,  1.28s/it, loss=1.53]Epoch 0:   7%|▋         | 212/3218 [04:31<1:04:08,  1.28s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 213/3218 [04:32<1:03:58,  1.28s/it, loss=1.53]Epoch 0:   7%|▋         | 213/3218 [04:32<1:03:58,  1.28s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 214/3218 [04:35<1:04:23,  1.29s/it, loss=1.53]Epoch 0:   7%|▋         | 214/3218 [04:35<1:04:23,  1.29s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 215/3218 [04:35<1:04:14,  1.28s/it, loss=1.53]Epoch 0:   7%|▋         | 215/3218 [04:35<1:04:14,  1.28s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 216/3218 [04:36<1:04:04,  1.28s/it, loss=1.53]Epoch 0:   7%|▋         | 216/3218 [04:36<1:04:04,  1.28s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 217/3218 [04:37<1:03:54,  1.28s/it, loss=1.52]Epoch 0:   7%|▋         | 217/3218 [04:37<1:03:54,  1.28s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 218/3218 [04:37<1:03:45,  1.28s/it, loss=1.52]Epoch 0:   7%|▋         | 218/3218 [04:37<1:03:45,  1.28s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 219/3218 [04:39<1:03:50,  1.28s/it, loss=1.5]Epoch 0:   7%|▋         | 219/3218 [04:39<1:03:50,  1.28s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 220/3218 [04:40<1:03:40,  1.27s/it, loss=1.5]Epoch 0:   7%|▋         | 220/3218 [04:40<1:03:40,  1.27s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 221/3218 [04:40<1:03:30,  1.27s/it, loss=1.5]Epoch 0:   7%|▋         | 221/3218 [04:41<1:03:30,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 222/3218 [04:41<1:03:21,  1.27s/it, loss=1.51]Epoch 0:   7%|▋         | 222/3218 [04:41<1:03:21,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 223/3218 [04:42<1:03:11,  1.27s/it, loss=1.51]Epoch 0:   7%|▋         | 223/3218 [04:42<1:03:12,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 224/3218 [04:43<1:03:09,  1.27s/it, loss=1.51]Epoch 0:   7%|▋         | 224/3218 [04:43<1:03:09,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 225/3218 [04:44<1:02:59,  1.26s/it, loss=1.51]Epoch 0:   7%|▋         | 225/3218 [04:44<1:02:59,  1.26s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 226/3218 [04:44<1:02:50,  1.26s/it, loss=1.5]Epoch 0:   7%|▋         | 226/3218 [04:44<1:02:50,  1.26s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 227/3218 [04:45<1:02:41,  1.26s/it, loss=1.5]Epoch 0:   7%|▋         | 227/3218 [04:45<1:02:41,  1.26s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 228/3218 [04:48<1:03:09,  1.27s/it, loss=1.5]Epoch 0:   7%|▋         | 228/3218 [04:48<1:03:09,  1.27s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 229/3218 [04:49<1:03:00,  1.26s/it, loss=1.49]Epoch 0:   7%|▋         | 229/3218 [04:49<1:03:00,  1.26s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 230/3218 [04:50<1:02:52,  1.26s/it, loss=1.49]Epoch 0:   7%|▋         | 230/3218 [04:50<1:02:52,  1.26s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 231/3218 [04:51<1:02:43,  1.26s/it, loss=1.49]Epoch 0:   7%|▋         | 231/3218 [04:51<1:02:43,  1.26s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 232/3218 [04:52<1:02:41,  1.26s/it, loss=1.49]Epoch 0:   7%|▋         | 232/3218 [04:52<1:02:41,  1.26s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 233/3218 [04:56<1:03:20,  1.27s/it, loss=1.49]Epoch 0:   7%|▋         | 233/3218 [04:56<1:03:20,  1.27s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 234/3218 [04:57<1:03:10,  1.27s/it, loss=1.49]Epoch 0:   7%|▋         | 234/3218 [04:57<1:03:10,  1.27s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 235/3218 [04:57<1:03:01,  1.27s/it, loss=1.49]Epoch 0:   7%|▋         | 235/3218 [04:57<1:03:01,  1.27s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 236/3218 [04:58<1:02:52,  1.26s/it, loss=1.49]Epoch 0:   7%|▋         | 236/3218 [04:58<1:02:52,  1.27s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 237/3218 [04:59<1:02:47,  1.26s/it, loss=1.49]Epoch 0:   7%|▋         | 237/3218 [04:59<1:02:47,  1.26s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 238/3218 [05:02<1:03:06,  1.27s/it, loss=1.5]Epoch 0:   7%|▋         | 238/3218 [05:02<1:03:06,  1.27s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 239/3218 [05:03<1:02:56,  1.27s/it, loss=1.5]Epoch 0:   7%|▋         | 239/3218 [05:03<1:02:56,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 240/3218 [05:03<1:02:48,  1.27s/it, loss=1.51]Epoch 0:   7%|▋         | 240/3218 [05:03<1:02:48,  1.27s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   7%|▋         | 241/3218 [05:04<1:02:39,  1.26s/it, loss=1.5]Epoch 0:   7%|▋         | 241/3218 [05:04<1:02:39,  1.26s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 242/3218 [05:05<1:02:30,  1.26s/it, loss=1.49]Epoch 0:   8%|▊         | 242/3218 [05:05<1:02:30,  1.26s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 243/3218 [05:08<1:03:00,  1.27s/it, loss=1.49]Epoch 0:   8%|▊         | 243/3218 [05:08<1:03:00,  1.27s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 244/3218 [05:09<1:02:51,  1.27s/it, loss=1.5]Epoch 0:   8%|▊         | 244/3218 [05:09<1:02:51,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 245/3218 [05:10<1:02:42,  1.27s/it, loss=1.51]Epoch 0:   8%|▊         | 245/3218 [05:10<1:02:42,  1.27s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 246/3218 [05:10<1:02:33,  1.26s/it, loss=1.51]Epoch 0:   8%|▊         | 246/3218 [05:10<1:02:33,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 247/3218 [05:11<1:02:25,  1.26s/it, loss=1.52]Epoch 0:   8%|▊         | 247/3218 [05:11<1:02:25,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 248/3218 [05:14<1:02:41,  1.27s/it, loss=1.52]Epoch 0:   8%|▊         | 248/3218 [05:14<1:02:41,  1.27s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 249/3218 [05:14<1:02:32,  1.26s/it, loss=1.52]Epoch 0:   8%|▊         | 249/3218 [05:14<1:02:32,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 250/3218 [05:15<1:02:23,  1.26s/it, loss=1.52]Epoch 0:   8%|▊         | 250/3218 [05:15<1:02:23,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 251/3218 [05:15<1:02:15,  1.26s/it, loss=1.52]Epoch 0:   8%|▊         | 251/3218 [05:16<1:02:15,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 252/3218 [05:17<1:02:13,  1.26s/it, loss=1.52]Epoch 0:   8%|▊         | 252/3218 [05:17<1:02:13,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 253/3218 [05:19<1:02:29,  1.26s/it, loss=1.52]Epoch 0:   8%|▊         | 253/3218 [05:19<1:02:29,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 254/3218 [05:20<1:02:20,  1.26s/it, loss=1.52]Epoch 0:   8%|▊         | 254/3218 [05:20<1:02:20,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 255/3218 [05:21<1:02:12,  1.26s/it, loss=1.54]Epoch 0:   8%|▊         | 255/3218 [05:21<1:02:12,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 256/3218 [05:21<1:02:04,  1.26s/it, loss=1.54]Epoch 0:   8%|▊         | 256/3218 [05:21<1:02:04,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 257/3218 [05:22<1:01:56,  1.26s/it, loss=1.54]Epoch 0:   8%|▊         | 257/3218 [05:22<1:01:56,  1.26s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 258/3218 [05:25<1:02:16,  1.26s/it, loss=1.53]Epoch 0:   8%|▊         | 258/3218 [05:25<1:02:16,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 259/3218 [05:26<1:02:08,  1.26s/it, loss=1.54]Epoch 0:   8%|▊         | 259/3218 [05:26<1:02:08,  1.26s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 260/3218 [05:27<1:02:00,  1.26s/it, loss=1.53]Epoch 0:   8%|▊         | 260/3218 [05:27<1:02:00,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 261/3218 [05:27<1:01:52,  1.26s/it, loss=1.54]Epoch 0:   8%|▊         | 261/3218 [05:27<1:01:52,  1.26s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 262/3218 [05:28<1:01:44,  1.25s/it, loss=1.55]Epoch 0:   8%|▊         | 262/3218 [05:28<1:01:44,  1.25s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 263/3218 [05:31<1:02:00,  1.26s/it, loss=1.57]Epoch 0:   8%|▊         | 263/3218 [05:31<1:02:00,  1.26s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 264/3218 [05:31<1:01:52,  1.26s/it, loss=1.55]Epoch 0:   8%|▊         | 264/3218 [05:31<1:01:52,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 265/3218 [05:32<1:01:44,  1.25s/it, loss=1.54]Epoch 0:   8%|▊         | 265/3218 [05:32<1:01:44,  1.25s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 266/3218 [05:33<1:01:37,  1.25s/it, loss=1.55]Epoch 0:   8%|▊         | 266/3218 [05:33<1:01:37,  1.25s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 267/3218 [05:33<1:01:29,  1.25s/it, loss=1.55]Epoch 0:   8%|▊         | 267/3218 [05:33<1:01:29,  1.25s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 268/3218 [05:37<1:01:55,  1.26s/it, loss=1.57]Epoch 0:   8%|▊         | 268/3218 [05:37<1:01:55,  1.26s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 269/3218 [05:38<1:01:47,  1.26s/it, loss=1.57]Epoch 0:   8%|▊         | 269/3218 [05:38<1:01:47,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 270/3218 [05:38<1:01:39,  1.25s/it, loss=1.58]Epoch 0:   8%|▊         | 270/3218 [05:38<1:01:39,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 271/3218 [05:39<1:01:31,  1.25s/it, loss=1.58]Epoch 0:   8%|▊         | 271/3218 [05:39<1:01:31,  1.25s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 272/3218 [05:40<1:01:24,  1.25s/it, loss=1.59]Epoch 0:   8%|▊         | 272/3218 [05:40<1:01:24,  1.25s/it, loss=1.6] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   8%|▊         | 273/3218 [05:44<1:02:00,  1.26s/it, loss=1.6]Epoch 0:   8%|▊         | 273/3218 [05:44<1:02:00,  1.26s/it, loss=1.6]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 274/3218 [05:45<1:01:52,  1.26s/it, loss=1.6]Epoch 0:   9%|▊         | 274/3218 [05:45<1:01:52,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 275/3218 [05:46<1:01:45,  1.26s/it, loss=1.58]Epoch 0:   9%|▊         | 275/3218 [05:46<1:01:45,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 276/3218 [05:46<1:01:37,  1.26s/it, loss=1.58]Epoch 0:   9%|▊         | 276/3218 [05:46<1:01:37,  1.26s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 277/3218 [05:47<1:01:29,  1.25s/it, loss=1.59]Epoch 0:   9%|▊         | 277/3218 [05:47<1:01:29,  1.25s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 278/3218 [05:52<1:02:03,  1.27s/it, loss=1.59]Epoch 0:   9%|▊         | 278/3218 [05:52<1:02:04,  1.27s/it, loss=1.6] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 279/3218 [05:52<1:01:56,  1.26s/it, loss=1.6]Epoch 0:   9%|▊         | 279/3218 [05:52<1:01:56,  1.26s/it, loss=1.6]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 280/3218 [05:53<1:01:48,  1.26s/it, loss=1.6]Epoch 0:   9%|▊         | 280/3218 [05:53<1:01:48,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▊         | 281/3218 [05:54<1:01:40,  1.26s/it, loss=1.58]Epoch 0:   9%|▊         | 281/3218 [05:54<1:01:40,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 282/3218 [05:54<1:01:32,  1.26s/it, loss=1.58]Epoch 0:   9%|▉         | 282/3218 [05:54<1:01:33,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 283/3218 [05:57<1:01:45,  1.26s/it, loss=1.58]Epoch 0:   9%|▉         | 283/3218 [05:57<1:01:45,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 284/3218 [05:57<1:01:37,  1.26s/it, loss=1.58]Epoch 0:   9%|▉         | 284/3218 [05:57<1:01:37,  1.26s/it, loss=1.59]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 285/3218 [05:58<1:01:30,  1.26s/it, loss=1.59]Epoch 0:   9%|▉         | 285/3218 [05:58<1:01:30,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 286/3218 [05:59<1:01:22,  1.26s/it, loss=1.58]Epoch 0:   9%|▉         | 286/3218 [05:59<1:01:22,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 287/3218 [05:59<1:01:14,  1.25s/it, loss=1.58]Epoch 0:   9%|▉         | 287/3218 [05:59<1:01:14,  1.25s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 288/3218 [06:05<1:01:59,  1.27s/it, loss=1.56]Epoch 0:   9%|▉         | 288/3218 [06:05<1:01:59,  1.27s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 289/3218 [06:06<1:01:51,  1.27s/it, loss=1.57]Epoch 0:   9%|▉         | 289/3218 [06:06<1:01:51,  1.27s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 290/3218 [06:06<1:01:44,  1.27s/it, loss=1.56]Epoch 0:   9%|▉         | 290/3218 [06:06<1:01:44,  1.27s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 291/3218 [06:07<1:01:36,  1.26s/it, loss=1.56]Epoch 0:   9%|▉         | 291/3218 [06:07<1:01:36,  1.26s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 292/3218 [06:08<1:01:29,  1.26s/it, loss=1.55]Epoch 0:   9%|▉         | 292/3218 [06:08<1:01:29,  1.26s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 293/3218 [06:10<1:01:40,  1.27s/it, loss=1.53]Epoch 0:   9%|▉         | 293/3218 [06:10<1:01:40,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 294/3218 [06:11<1:01:33,  1.26s/it, loss=1.53]Epoch 0:   9%|▉         | 294/3218 [06:11<1:01:33,  1.26s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 295/3218 [06:11<1:01:25,  1.26s/it, loss=1.53]Epoch 0:   9%|▉         | 295/3218 [06:11<1:01:25,  1.26s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 296/3218 [06:12<1:01:18,  1.26s/it, loss=1.53]Epoch 0:   9%|▉         | 296/3218 [06:12<1:01:18,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 297/3218 [06:13<1:01:10,  1.26s/it, loss=1.52]Epoch 0:   9%|▉         | 297/3218 [06:13<1:01:11,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 298/3218 [06:16<1:01:28,  1.26s/it, loss=1.52]Epoch 0:   9%|▉         | 298/3218 [06:16<1:01:28,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 299/3218 [06:17<1:01:20,  1.26s/it, loss=1.51]Epoch 0:   9%|▉         | 299/3218 [06:17<1:01:20,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 300/3218 [06:17<1:01:13,  1.26s/it, loss=1.51]Epoch 0:   9%|▉         | 300/3218 [06:17<1:01:13,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 301/3218 [06:18<1:01:06,  1.26s/it, loss=1.51]Epoch 0:   9%|▉         | 301/3218 [06:18<1:01:06,  1.26s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 302/3218 [06:18<1:00:59,  1.25s/it, loss=1.5]Epoch 0:   9%|▉         | 302/3218 [06:18<1:00:59,  1.25s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 303/3218 [06:21<1:01:07,  1.26s/it, loss=1.49]Epoch 0:   9%|▉         | 303/3218 [06:21<1:01:07,  1.26s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 304/3218 [06:21<1:01:00,  1.26s/it, loss=1.49]Epoch 0:   9%|▉         | 304/3218 [06:21<1:01:00,  1.26s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:   9%|▉         | 305/3218 [06:22<1:00:53,  1.25s/it, loss=1.48]Epoch 0:   9%|▉         | 305/3218 [06:22<1:00:53,  1.25s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 306/3218 [06:23<1:00:47,  1.25s/it, loss=1.48]Epoch 0:  10%|▉         | 306/3218 [06:23<1:00:47,  1.25s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 307/3218 [06:23<1:00:40,  1.25s/it, loss=1.49]Epoch 0:  10%|▉         | 307/3218 [06:23<1:00:40,  1.25s/it, loss=1.49]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (141880000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 308/3218 [06:33<1:01:59,  1.28s/it, loss=1.49]Epoch 0:  10%|▉         | 308/3218 [06:33<1:01:59,  1.28s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 309/3218 [06:34<1:01:51,  1.28s/it, loss=1.48]Epoch 0:  10%|▉         | 309/3218 [06:34<1:01:51,  1.28s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 310/3218 [06:34<1:01:44,  1.27s/it, loss=1.49]Epoch 0:  10%|▉         | 310/3218 [06:34<1:01:44,  1.27s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 311/3218 [06:35<1:01:37,  1.27s/it, loss=1.5]Epoch 0:  10%|▉         | 311/3218 [06:35<1:01:37,  1.27s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 312/3218 [06:36<1:01:30,  1.27s/it, loss=1.5]Epoch 0:  10%|▉         | 312/3218 [06:36<1:01:30,  1.27s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 313/3218 [06:39<1:01:43,  1.28s/it, loss=1.52]Epoch 0:  10%|▉         | 313/3218 [06:39<1:01:43,  1.28s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 314/3218 [06:39<1:01:36,  1.27s/it, loss=1.53]Epoch 0:  10%|▉         | 314/3218 [06:39<1:01:37,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 315/3218 [06:40<1:01:29,  1.27s/it, loss=1.53]Epoch 0:  10%|▉         | 315/3218 [06:40<1:01:29,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 316/3218 [06:41<1:01:22,  1.27s/it, loss=1.53]Epoch 0:  10%|▉         | 316/3218 [06:41<1:01:22,  1.27s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 317/3218 [06:41<1:01:15,  1.27s/it, loss=1.54]Epoch 0:  10%|▉         | 317/3218 [06:41<1:01:15,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 318/3218 [06:43<1:01:17,  1.27s/it, loss=1.53]Epoch 0:  10%|▉         | 318/3218 [06:43<1:01:17,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 319/3218 [06:43<1:01:10,  1.27s/it, loss=1.53]Epoch 0:  10%|▉         | 319/3218 [06:43<1:01:10,  1.27s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 320/3218 [06:44<1:01:03,  1.26s/it, loss=1.54]Epoch 0:  10%|▉         | 320/3218 [06:44<1:01:03,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|▉         | 321/3218 [06:45<1:00:56,  1.26s/it, loss=1.54]Epoch 0:  10%|▉         | 321/3218 [06:45<1:00:57,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 322/3218 [06:45<1:00:50,  1.26s/it, loss=1.54]Epoch 0:  10%|█         | 322/3218 [06:45<1:00:50,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 323/3218 [06:47<1:00:56,  1.26s/it, loss=1.54]Epoch 0:  10%|█         | 323/3218 [06:47<1:00:56,  1.26s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 324/3218 [06:48<1:00:49,  1.26s/it, loss=1.56]Epoch 0:  10%|█         | 324/3218 [06:48<1:00:49,  1.26s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 325/3218 [06:49<1:00:42,  1.26s/it, loss=1.56]Epoch 0:  10%|█         | 325/3218 [06:49<1:00:43,  1.26s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 326/3218 [06:49<1:00:36,  1.26s/it, loss=1.56]Epoch 0:  10%|█         | 326/3218 [06:49<1:00:36,  1.26s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 327/3218 [06:50<1:00:29,  1.26s/it, loss=1.56]Epoch 0:  10%|█         | 327/3218 [06:50<1:00:29,  1.26s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 328/3218 [06:53<1:00:46,  1.26s/it, loss=1.56]Epoch 0:  10%|█         | 328/3218 [06:53<1:00:46,  1.26s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 329/3218 [06:54<1:00:39,  1.26s/it, loss=1.56]Epoch 0:  10%|█         | 329/3218 [06:54<1:00:40,  1.26s/it, loss=1.57]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 330/3218 [06:55<1:00:33,  1.26s/it, loss=1.57]Epoch 0:  10%|█         | 330/3218 [06:55<1:00:33,  1.26s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 331/3218 [06:55<1:00:27,  1.26s/it, loss=1.56]Epoch 0:  10%|█         | 331/3218 [06:55<1:00:27,  1.26s/it, loss=1.58]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 332/3218 [06:56<1:00:21,  1.25s/it, loss=1.58]Epoch 0:  10%|█         | 332/3218 [06:56<1:00:21,  1.25s/it, loss=1.56]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 333/3218 [06:57<1:00:19,  1.25s/it, loss=1.56]Epoch 0:  10%|█         | 333/3218 [06:57<1:00:19,  1.25s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 334/3218 [06:58<1:00:13,  1.25s/it, loss=1.55]Epoch 0:  10%|█         | 334/3218 [06:58<1:00:13,  1.25s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 335/3218 [06:59<1:00:06,  1.25s/it, loss=1.55]Epoch 0:  10%|█         | 335/3218 [06:59<1:00:06,  1.25s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 336/3218 [06:59<1:00:00,  1.25s/it, loss=1.55]Epoch 0:  10%|█         | 336/3218 [06:59<1:00:00,  1.25s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  10%|█         | 337/3218 [07:00<59:54,  1.25s/it, loss=1.54]  Epoch 0:  10%|█         | 337/3218 [07:00<59:54,  1.25s/it, loss=1.54]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (141880000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 338/3218 [07:09<1:00:56,  1.27s/it, loss=1.54]Epoch 0:  11%|█         | 338/3218 [07:09<1:00:56,  1.27s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 339/3218 [07:09<1:00:49,  1.27s/it, loss=1.55]Epoch 0:  11%|█         | 339/3218 [07:09<1:00:49,  1.27s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 340/3218 [07:10<1:00:43,  1.27s/it, loss=1.54]Epoch 0:  11%|█         | 340/3218 [07:10<1:00:43,  1.27s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 341/3218 [07:11<1:00:36,  1.26s/it, loss=1.54]Epoch 0:  11%|█         | 341/3218 [07:11<1:00:36,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 342/3218 [07:11<1:00:29,  1.26s/it, loss=1.54]Epoch 0:  11%|█         | 342/3218 [07:11<1:00:29,  1.26s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 343/3218 [07:15<1:00:48,  1.27s/it, loss=1.54]Epoch 0:  11%|█         | 343/3218 [07:15<1:00:48,  1.27s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 344/3218 [07:15<1:00:41,  1.27s/it, loss=1.52]Epoch 0:  11%|█         | 344/3218 [07:15<1:00:42,  1.27s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 345/3218 [07:16<1:00:35,  1.27s/it, loss=1.52]Epoch 0:  11%|█         | 345/3218 [07:16<1:00:35,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 346/3218 [07:17<1:00:28,  1.26s/it, loss=1.53]Epoch 0:  11%|█         | 346/3218 [07:17<1:00:28,  1.26s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 347/3218 [07:17<1:00:22,  1.26s/it, loss=1.53]Epoch 0:  11%|█         | 347/3218 [07:17<1:00:22,  1.26s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 348/3218 [07:21<1:00:41,  1.27s/it, loss=1.53]Epoch 0:  11%|█         | 348/3218 [07:21<1:00:41,  1.27s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 349/3218 [07:22<1:00:34,  1.27s/it, loss=1.54]Epoch 0:  11%|█         | 349/3218 [07:22<1:00:34,  1.27s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 350/3218 [07:22<1:00:28,  1.27s/it, loss=1.53]Epoch 0:  11%|█         | 350/3218 [07:22<1:00:28,  1.27s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 351/3218 [07:23<1:00:22,  1.26s/it, loss=1.52]Epoch 0:  11%|█         | 351/3218 [07:23<1:00:22,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 352/3218 [07:24<1:00:15,  1.26s/it, loss=1.51]Epoch 0:  11%|█         | 352/3218 [07:24<1:00:15,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 353/3218 [07:25<1:00:19,  1.26s/it, loss=1.51]Epoch 0:  11%|█         | 353/3218 [07:25<1:00:19,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 354/3218 [07:26<1:00:13,  1.26s/it, loss=1.51]Epoch 0:  11%|█         | 354/3218 [07:26<1:00:13,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 355/3218 [07:27<1:00:06,  1.26s/it, loss=1.51]Epoch 0:  11%|█         | 355/3218 [07:27<1:00:06,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 356/3218 [07:27<1:00:01,  1.26s/it, loss=1.51]Epoch 0:  11%|█         | 356/3218 [07:27<1:00:01,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 357/3218 [07:28<59:55,  1.26s/it, loss=1.52]  Epoch 0:  11%|█         | 357/3218 [07:28<59:55,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 358/3218 [07:30<1:00:02,  1.26s/it, loss=1.52]Epoch 0:  11%|█         | 358/3218 [07:30<1:00:02,  1.26s/it, loss=1.51]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/Image.py:3035: DecompressionBombWarning: Image size (102080000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 359/3218 [07:31<59:56,  1.26s/it, loss=1.51]  Epoch 0:  11%|█         | 359/3218 [07:31<59:56,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 360/3218 [07:32<59:50,  1.26s/it, loss=1.51]Epoch 0:  11%|█         | 360/3218 [07:32<59:50,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 361/3218 [07:32<59:44,  1.25s/it, loss=1.51]Epoch 0:  11%|█         | 361/3218 [07:32<59:44,  1.25s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█         | 362/3218 [07:33<59:38,  1.25s/it, loss=1.51]Epoch 0:  11%|█         | 362/3218 [07:33<59:38,  1.25s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 363/3218 [07:36<59:50,  1.26s/it, loss=1.51]Epoch 0:  11%|█▏        | 363/3218 [07:36<59:50,  1.26s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 364/3218 [07:37<59:44,  1.26s/it, loss=1.51]Epoch 0:  11%|█▏        | 364/3218 [07:37<59:44,  1.26s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 365/3218 [07:37<59:38,  1.25s/it, loss=1.52]Epoch 0:  11%|█▏        | 365/3218 [07:37<59:38,  1.25s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 366/3218 [07:38<59:32,  1.25s/it, loss=1.52]Epoch 0:  11%|█▏        | 366/3218 [07:38<59:32,  1.25s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 367/3218 [07:39<59:26,  1.25s/it, loss=1.52]Epoch 0:  11%|█▏        | 367/3218 [07:39<59:26,  1.25s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 368/3218 [07:40<59:27,  1.25s/it, loss=1.53]Epoch 0:  11%|█▏        | 368/3218 [07:40<59:27,  1.25s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 369/3218 [07:41<59:21,  1.25s/it, loss=1.52]Epoch 0:  11%|█▏        | 369/3218 [07:41<59:21,  1.25s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  11%|█▏        | 370/3218 [07:41<59:15,  1.25s/it, loss=1.52]Epoch 0:  11%|█▏        | 370/3218 [07:41<59:15,  1.25s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 371/3218 [07:42<59:12,  1.25s/it, loss=1.52]Epoch 0:  12%|█▏        | 371/3218 [07:42<59:12,  1.25s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 372/3218 [07:43<59:06,  1.25s/it, loss=1.52]Epoch 0:  12%|█▏        | 372/3218 [07:43<59:06,  1.25s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 373/3218 [07:44<59:00,  1.24s/it, loss=1.52]Epoch 0:  12%|█▏        | 373/3218 [07:44<59:01,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 374/3218 [07:44<58:55,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 374/3218 [07:44<58:55,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 375/3218 [07:45<58:49,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 375/3218 [07:45<58:49,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 376/3218 [07:46<58:48,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 376/3218 [07:46<58:48,  1.24s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 377/3218 [07:47<58:43,  1.24s/it, loss=1.52]Epoch 0:  12%|█▏        | 377/3218 [07:47<58:43,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 378/3218 [07:48<58:39,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 378/3218 [07:48<58:39,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 379/3218 [07:49<58:34,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 379/3218 [07:49<58:34,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 380/3218 [07:49<58:28,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 380/3218 [07:49<58:28,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 381/3218 [07:51<58:31,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 381/3218 [07:51<58:31,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 382/3218 [07:52<58:25,  1.24s/it, loss=1.53]Epoch 0:  12%|█▏        | 382/3218 [07:52<58:25,  1.24s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 383/3218 [07:52<58:20,  1.23s/it, loss=1.53]Epoch 0:  12%|█▏        | 383/3218 [07:52<58:20,  1.23s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 384/3218 [07:53<58:14,  1.23s/it, loss=1.54]Epoch 0:  12%|█▏        | 384/3218 [07:53<58:14,  1.23s/it, loss=1.53]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 385/3218 [07:54<58:09,  1.23s/it, loss=1.53]Epoch 0:  12%|█▏        | 385/3218 [07:54<58:09,  1.23s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 386/3218 [07:55<58:07,  1.23s/it, loss=1.52]Epoch 0:  12%|█▏        | 386/3218 [07:55<58:07,  1.23s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 387/3218 [07:55<58:01,  1.23s/it, loss=1.51]Epoch 0:  12%|█▏        | 387/3218 [07:55<58:01,  1.23s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 388/3218 [07:57<58:00,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 388/3218 [07:57<58:00,  1.23s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 389/3218 [07:59<58:03,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 389/3218 [07:59<58:03,  1.23s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 390/3218 [07:59<57:58,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 390/3218 [07:59<57:58,  1.23s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 391/3218 [08:00<57:53,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 391/3218 [08:00<57:53,  1.23s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 392/3218 [08:04<58:13,  1.24s/it, loss=1.5]Epoch 0:  12%|█▏        | 392/3218 [08:04<58:13,  1.24s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 393/3218 [08:05<58:08,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 393/3218 [08:05<58:08,  1.23s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 394/3218 [08:05<58:02,  1.23s/it, loss=1.48]Epoch 0:  12%|█▏        | 394/3218 [08:05<58:02,  1.23s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 395/3218 [08:06<57:57,  1.23s/it, loss=1.48]Epoch 0:  12%|█▏        | 395/3218 [08:06<57:57,  1.23s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 396/3218 [08:07<57:51,  1.23s/it, loss=1.48]Epoch 0:  12%|█▏        | 396/3218 [08:07<57:51,  1.23s/it, loss=1.49]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 397/3218 [08:09<57:56,  1.23s/it, loss=1.49]Epoch 0:  12%|█▏        | 397/3218 [08:09<57:57,  1.23s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 398/3218 [08:09<57:51,  1.23s/it, loss=1.48]Epoch 0:  12%|█▏        | 398/3218 [08:09<57:51,  1.23s/it, loss=1.48]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 399/3218 [08:10<57:46,  1.23s/it, loss=1.48]Epoch 0:  12%|█▏        | 399/3218 [08:10<57:46,  1.23s/it, loss=1.5] B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 400/3218 [08:11<57:41,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 400/3218 [08:11<57:41,  1.23s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 401/3218 [08:12<57:39,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 401/3218 [08:12<57:39,  1.23s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  12%|█▏        | 402/3218 [08:14<57:41,  1.23s/it, loss=1.5]Epoch 0:  12%|█▏        | 402/3218 [08:14<57:41,  1.23s/it, loss=1.5]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 403/3218 [08:14<57:36,  1.23s/it, loss=1.5]Epoch 0:  13%|█▎        | 403/3218 [08:14<57:36,  1.23s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 404/3218 [08:16<57:36,  1.23s/it, loss=1.52]Epoch 0:  13%|█▎        | 404/3218 [08:16<57:36,  1.23s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 405/3218 [08:16<57:31,  1.23s/it, loss=1.52]Epoch 0:  13%|█▎        | 405/3218 [08:16<57:31,  1.23s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 406/3218 [08:17<57:26,  1.23s/it, loss=1.51]Epoch 0:  13%|█▎        | 406/3218 [08:17<57:26,  1.23s/it, loss=1.51]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 407/3218 [08:18<57:25,  1.23s/it, loss=1.51]Epoch 0:  13%|█▎        | 407/3218 [08:18<57:25,  1.23s/it, loss=1.52]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 408/3218 [08:19<57:20,  1.22s/it, loss=1.52]Epoch 0:  13%|█▎        | 408/3218 [08:19<57:20,  1.22s/it, loss=1.54]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 409/3218 [08:21<57:23,  1.23s/it, loss=1.54]Epoch 0:  13%|█▎        | 409/3218 [08:21<57:23,  1.23s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 410/3218 [08:21<57:17,  1.22s/it, loss=1.55]Epoch 0:  13%|█▎        | 410/3218 [08:21<57:17,  1.22s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 411/3218 [08:24<57:25,  1.23s/it, loss=1.55]Epoch 0:  13%|█▎        | 411/3218 [08:24<57:25,  1.23s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+Epoch 0:  13%|█▎        | 412/3218 [08:25<57:20,  1.23s/it, loss=1.55]Epoch 0:  13%|█▎        | 412/3218 [08:25<57:20,  1.23s/it, loss=1.55]B, N, C, H, W: (4, 10, 3, 224, 224)
+logits.shape: torch.Size([4, 40])
+slurmstepd: error: *** JOB 4473295 ON ai13 CANCELLED AT 2023-01-11T14:15:59 ***
+Epoch 0:  13%|█▎        | 413/3218 [08:25<57:15,  1.22s/it, loss=1.55]

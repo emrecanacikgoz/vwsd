@@ -1,0 +1,1332 @@
+=======================
+Loading Anaconda Module...
+"data":    {'debug': False, 'batch_size': 1, 'source': 'GOOGLE', 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}
+"model":   {'load': True, 'name': 'CLIPFinetune'}
+"output":  clip_ft_google_val.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 1, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+{'load': True, 'name': 'CLIPFinetune'}
+/scratch/users/oince22/vwsd/scripts
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+{'word': 'moorhen', 'context': 'moorhen swamphen', 'images': ['image.3.jpg', 'image.8.jpg', 'image.4.jpg', 'image.1.jpg', 'image.2.jpg', 'image.0.jpg', 'image.5.jpg', 'image.6.jpg', 'image.7.jpg', 'image.9.jpg'], 'gold': 'image.0.jpg', 'prompt': 'moorhen moorhen swamphen . clearly bigger than coot and almost twice the size of moorhen generally unmistakable with its dark violet blue plumage long robust legs and heavy bill this species has an extremely large range and hence does not approach the thresholds for vulnerable under the range size criterion extent of occurrence the purple swamphen porphyrio porphyrio also known as the african purple swamphen purple moorhen purple gallinule or purple coot the purple swamphen porphyrio'}
+Config: {'seed': 12345, 'output': '/scratch/users/oince22/vwsd/scripts/clip_ft_cnet_2.out', 'trainer': {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 10, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}, 'model': {'load': False, 'name': 'CLIPFinetune'}, 'data': {'debug': False, 'batch_size': 4, 'source': 'GOOGLE', 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}}
+/scratch/users/oince22/vwsd/scripts
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+{'word': 'moorhen', 'context': 'moorhen swamphen', 'images': ['image.3.jpg', 'image.8.jpg', 'image.4.jpg', 'image.1.jpg', 'image.2.jpg', 'image.0.jpg', 'image.5.jpg', 'image.6.jpg', 'image.7.jpg', 'image.9.jpg'], 'gold': 'image.0.jpg', 'prompt': 'moorhen moorhen swamphen . clearly bigger than coot and almost twice the size of moorhen generally unmistakable with its dark violet blue plumage long robust legs and heavy bill this species has an extremely large range and hence does not approach the thresholds for vulnerable under the range size criterion extent of occurrence the purple swamphen porphyrio porphyrio also known as the african purple swamphen purple moorhen purple gallinule or purple coot the purple swamphen porphyrio'}
+Validation: 0it [00:00, ?it/s]Validation:   0%|          | 0/1287 [00:00<?, ?it/s]Validation DataLoader 0:   0%|          | 0/1287 [00:00<?, ?it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/utilities/data.py:85: UserWarning: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 1. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
+  warning_cache.warn(
+Validation DataLoader 0:   0%|          | 1/1287 [00:04<1:35:57,  4.48s/it]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   0%|          | 2/1287 [00:04<49:58,  2.33s/it]  preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   0%|          | 3/1287 [00:04<34:49,  1.63s/it]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   0%|          | 4/1287 [00:05<27:15,  1.27s/it]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   0%|          | 5/1287 [00:05<22:45,  1.06s/it]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   0%|          | 6/1287 [00:05<19:44,  1.08it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 7/1287 [00:05<17:33,  1.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 8/1287 [00:05<15:51,  1.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 9/1287 [00:06<14:31,  1.47it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 10/1287 [00:06<13:34,  1.57it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 11/1287 [00:06<12:45,  1.67it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 12/1287 [00:06<12:06,  1.75it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 13/1287 [00:07<11:34,  1.83it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 14/1287 [00:07<11:01,  1.92it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 15/1287 [00:07<10:32,  2.01it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|          | 16/1287 [00:08<10:54,  1.94it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|▏         | 17/1287 [00:09<11:12,  1.89it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|▏         | 18/1287 [00:15<17:51,  1.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   1%|▏         | 19/1287 [00:15<17:07,  1.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 20/1287 [00:15<16:26,  1.28it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 21/1287 [00:15<15:50,  1.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 22/1287 [00:15<15:16,  1.38it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 23/1287 [00:16<15:17,  1.38it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 24/1287 [00:16<14:51,  1.42it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 25/1287 [00:17<14:26,  1.46it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 26/1287 [00:17<14:03,  1.49it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 27/1287 [00:17<13:43,  1.53it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 28/1287 [00:17<13:24,  1.56it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 29/1287 [00:18<13:04,  1.60it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 30/1287 [00:18<12:45,  1.64it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 31/1287 [00:18<12:27,  1.68it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   2%|▏         | 32/1287 [00:18<12:10,  1.72it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 33/1287 [00:18<11:55,  1.75it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 34/1287 [00:19<12:04,  1.73it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 35/1287 [00:19<11:50,  1.76it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 36/1287 [00:21<12:26,  1.68it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 37/1287 [00:21<12:11,  1.71it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 38/1287 [00:21<11:58,  1.74it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 39/1287 [00:22<11:46,  1.77it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 40/1287 [00:22<11:35,  1.79it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 41/1287 [00:23<11:53,  1.75it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 42/1287 [00:23<11:41,  1.78it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 43/1287 [00:23<11:30,  1.80it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 44/1287 [00:24<11:23,  1.82it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   3%|▎         | 45/1287 [00:24<11:14,  1.84it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▎         | 46/1287 [00:26<12:01,  1.72it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▎         | 47/1287 [00:27<11:59,  1.72it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▎         | 48/1287 [00:27<11:48,  1.75it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 49/1287 [00:27<11:38,  1.77it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 50/1287 [00:27<11:28,  1.80it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 51/1287 [00:27<11:18,  1.82it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 52/1287 [00:28<11:09,  1.84it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 53/1287 [00:28<11:00,  1.87it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 54/1287 [00:28<10:52,  1.89it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 55/1287 [00:28<10:43,  1.91it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 56/1287 [00:29<10:51,  1.89it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   4%|▍         | 57/1287 [00:29<10:43,  1.91it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▍         | 58/1287 [00:30<10:36,  1.93it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▍         | 59/1287 [00:30<10:29,  1.95it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▍         | 60/1287 [00:30<10:23,  1.97it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▍         | 61/1287 [00:30<10:17,  1.99it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▍         | 62/1287 [00:30<10:11,  2.00it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▍         | 63/1287 [00:31<10:05,  2.02it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▍         | 64/1287 [00:31<09:58,  2.04it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▌         | 65/1287 [00:31<09:52,  2.06it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▌         | 66/1287 [00:32<10:04,  2.02it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▌         | 67/1287 [00:32<09:58,  2.04it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▌         | 68/1287 [00:33<09:52,  2.06it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▌         | 69/1287 [00:33<09:46,  2.08it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   5%|▌         | 70/1287 [00:33<09:40,  2.10it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 71/1287 [00:35<10:10,  1.99it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 72/1287 [00:35<10:05,  2.01it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 73/1287 [00:36<10:00,  2.02it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 74/1287 [00:36<09:55,  2.04it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 75/1287 [00:36<09:52,  2.04it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 76/1287 [00:37<09:55,  2.03it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 77/1287 [00:37<09:50,  2.05it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 78/1287 [00:37<09:44,  2.07it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 79/1287 [00:37<09:39,  2.08it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▌         | 80/1287 [00:38<09:34,  2.10it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▋         | 81/1287 [00:38<09:39,  2.08it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▋         | 82/1287 [00:39<09:35,  2.09it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   6%|▋         | 83/1287 [00:39<09:30,  2.11it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 84/1287 [00:39<09:26,  2.13it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 85/1287 [00:39<09:21,  2.14it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 86/1287 [00:44<10:24,  1.92it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 87/1287 [00:44<10:19,  1.94it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 88/1287 [00:45<10:14,  1.95it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 89/1287 [00:45<10:09,  1.97it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 90/1287 [00:45<10:04,  1.98it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 91/1287 [00:45<10:02,  1.99it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 92/1287 [00:46<09:57,  2.00it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 93/1287 [00:46<09:54,  2.01it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 94/1287 [00:46<09:49,  2.02it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 95/1287 [00:46<09:45,  2.04it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   7%|▋         | 96/1287 [00:47<09:46,  2.03it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 97/1287 [00:47<09:42,  2.04it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 98/1287 [00:47<09:37,  2.06it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 99/1287 [00:48<09:38,  2.05it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 100/1287 [00:48<09:34,  2.07it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 101/1287 [00:49<09:42,  2.04it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 102/1287 [00:49<09:38,  2.05it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 103/1287 [00:50<09:34,  2.06it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 104/1287 [00:50<09:31,  2.07it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 105/1287 [00:50<09:27,  2.08it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 106/1287 [00:51<09:28,  2.08it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 107/1287 [00:51<09:25,  2.09it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 108/1287 [00:51<09:21,  2.10it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   8%|▊         | 109/1287 [00:51<09:18,  2.11it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▊         | 110/1287 [00:51<09:15,  2.12it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▊         | 111/1287 [00:53<09:26,  2.08it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▊         | 112/1287 [00:53<09:22,  2.09it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 113/1287 [00:53<09:19,  2.10it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 114/1287 [00:54<09:15,  2.11it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 115/1287 [00:54<09:12,  2.12it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 116/1287 [00:54<09:09,  2.13it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 117/1287 [00:54<09:06,  2.14it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 118/1287 [00:54<09:03,  2.15it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 119/1287 [00:55<08:59,  2.16it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 120/1287 [00:55<08:56,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 121/1287 [00:55<08:57,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:   9%|▉         | 122/1287 [00:55<08:54,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|▉         | 123/1287 [00:56<08:51,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|▉         | 124/1287 [00:56<08:48,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|▉         | 125/1287 [00:56<08:45,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|▉         | 126/1287 [00:56<08:44,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|▉         | 127/1287 [00:57<08:48,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|▉         | 128/1287 [00:58<08:45,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|█         | 129/1287 [00:58<08:42,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|█         | 130/1287 [00:58<08:40,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|█         | 131/1287 [01:00<08:51,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|█         | 132/1287 [01:00<08:48,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|█         | 133/1287 [01:00<08:45,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|█         | 134/1287 [01:00<08:43,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  10%|█         | 135/1287 [01:00<08:40,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 136/1287 [01:03<08:53,  2.16it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 137/1287 [01:03<08:51,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 138/1287 [01:03<08:48,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 139/1287 [01:03<08:45,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 140/1287 [01:03<08:43,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 141/1287 [01:04<08:44,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 142/1287 [01:04<08:42,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 143/1287 [01:05<08:40,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█         | 144/1287 [01:05<08:38,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█▏        | 145/1287 [01:05<08:35,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█▏        | 146/1287 [01:06<08:40,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█▏        | 147/1287 [01:06<08:38,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  11%|█▏        | 148/1287 [01:07<08:35,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 149/1287 [01:07<08:33,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 150/1287 [01:07<08:30,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 151/1287 [01:10<08:50,  2.14it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 152/1287 [01:10<08:47,  2.15it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 153/1287 [01:10<08:45,  2.16it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 154/1287 [01:11<08:42,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 155/1287 [01:11<08:40,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 156/1287 [01:11<08:38,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 157/1287 [01:11<08:36,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 158/1287 [01:12<08:34,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 159/1287 [01:12<08:32,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  12%|█▏        | 160/1287 [01:12<08:30,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 161/1287 [01:14<08:42,  2.15it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 162/1287 [01:14<08:40,  2.16it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 163/1287 [01:16<08:44,  2.14it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 164/1287 [01:16<08:42,  2.15it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 165/1287 [01:16<08:40,  2.16it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 166/1287 [01:16<08:37,  2.16it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 167/1287 [01:16<08:35,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 168/1287 [01:17<08:35,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 169/1287 [01:17<08:33,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 170/1287 [01:17<08:31,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 171/1287 [01:18<08:31,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 172/1287 [01:18<08:29,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  13%|█▎        | 173/1287 [01:18<08:27,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▎        | 174/1287 [01:19<08:26,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▎        | 175/1287 [01:19<08:24,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▎        | 176/1287 [01:19<08:24,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 177/1287 [01:20<08:22,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 178/1287 [01:20<08:19,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 179/1287 [01:20<08:18,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 180/1287 [01:20<08:16,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 181/1287 [01:21<08:17,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 182/1287 [01:21<08:15,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 183/1287 [01:21<08:13,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 184/1287 [01:21<08:11,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 185/1287 [01:22<08:09,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  14%|█▍        | 186/1287 [01:22<08:09,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▍        | 187/1287 [01:24<08:15,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▍        | 188/1287 [01:24<08:14,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▍        | 189/1287 [01:24<08:12,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▍        | 190/1287 [01:24<08:10,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▍        | 191/1287 [01:25<08:08,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▍        | 192/1287 [01:27<08:18,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▍        | 193/1287 [01:27<08:17,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▌        | 194/1287 [01:27<08:15,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▌        | 195/1287 [01:28<08:13,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▌        | 196/1287 [01:28<08:11,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▌        | 197/1287 [01:29<08:14,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▌        | 198/1287 [01:29<08:12,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  15%|█▌        | 199/1287 [01:29<08:10,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 200/1287 [01:29<08:08,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 201/1287 [01:30<08:07,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 202/1287 [01:32<08:16,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 203/1287 [01:32<08:14,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 204/1287 [01:32<08:13,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 205/1287 [01:33<08:11,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 206/1287 [01:33<08:09,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 207/1287 [01:35<08:18,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 208/1287 [01:35<08:16,  2.17it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▌        | 209/1287 [01:35<08:14,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▋        | 210/1287 [01:36<08:12,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▋        | 211/1287 [01:36<08:11,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  16%|█▋        | 212/1287 [01:36<08:10,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 213/1287 [01:36<08:08,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 214/1287 [01:37<08:06,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 215/1287 [01:37<08:05,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 216/1287 [01:37<08:03,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 217/1287 [01:39<08:09,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 218/1287 [01:39<08:07,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 219/1287 [01:39<08:05,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 220/1287 [01:39<08:04,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 221/1287 [01:40<08:02,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 222/1287 [01:41<08:07,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 223/1287 [01:41<08:06,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 224/1287 [01:42<08:04,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  17%|█▋        | 225/1287 [01:42<08:02,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 226/1287 [01:42<08:01,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 227/1287 [01:43<08:04,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 228/1287 [01:44<08:03,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 229/1287 [01:44<08:02,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 230/1287 [01:44<08:00,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 231/1287 [01:44<07:59,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 232/1287 [01:45<07:57,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 233/1287 [01:45<07:56,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 234/1287 [01:45<07:54,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 235/1287 [01:45<07:53,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 236/1287 [01:45<07:51,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 237/1287 [01:47<07:55,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  18%|█▊        | 238/1287 [01:47<07:53,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▊        | 239/1287 [01:47<07:52,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▊        | 240/1287 [01:47<07:50,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▊        | 241/1287 [01:48<07:49,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 242/1287 [01:48<07:48,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 243/1287 [01:50<07:55,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 244/1287 [01:50<07:54,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 245/1287 [01:51<07:52,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 246/1287 [01:51<07:51,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 247/1287 [01:51<07:49,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 248/1287 [01:52<07:51,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 249/1287 [01:52<07:49,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  19%|█▉        | 250/1287 [01:52<07:47,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|█▉        | 251/1287 [01:53<07:46,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|█▉        | 252/1287 [01:53<07:44,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|█▉        | 253/1287 [01:54<07:46,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|█▉        | 254/1287 [01:54<07:45,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|█▉        | 255/1287 [01:54<07:43,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|█▉        | 256/1287 [01:54<07:42,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|█▉        | 257/1287 [01:55<07:41,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|██        | 258/1287 [01:57<07:48,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|██        | 259/1287 [01:57<07:47,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|██        | 260/1287 [01:57<07:45,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|██        | 261/1287 [01:58<07:44,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|██        | 262/1287 [01:58<07:42,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  20%|██        | 263/1287 [01:59<07:44,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 264/1287 [01:59<07:43,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 265/1287 [01:59<07:41,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 266/1287 [01:59<07:40,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 267/1287 [02:00<07:39,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 268/1287 [02:01<07:40,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 269/1287 [02:01<07:38,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 270/1287 [02:01<07:37,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 271/1287 [02:02<07:39,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 272/1287 [02:02<07:38,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██        | 273/1287 [02:03<07:36,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██▏       | 274/1287 [02:03<07:35,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██▏       | 275/1287 [02:03<07:34,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  21%|██▏       | 276/1287 [02:04<07:36,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 277/1287 [02:04<07:34,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 278/1287 [02:04<07:33,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 279/1287 [02:05<07:32,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 280/1287 [02:05<07:30,  2.23it/s]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:845: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0. 
+  warnings.warn(str(msg))
+preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 281/1287 [02:06<07:32,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 282/1287 [02:06<07:31,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 283/1287 [02:06<07:30,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 284/1287 [02:07<07:28,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 285/1287 [02:07<07:27,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 286/1287 [02:09<07:32,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 287/1287 [02:09<07:31,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 288/1287 [02:09<07:29,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  22%|██▏       | 289/1287 [02:09<07:28,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 290/1287 [02:10<07:27,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 291/1287 [02:11<07:31,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 292/1287 [02:11<07:29,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 293/1287 [02:12<07:28,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 294/1287 [02:12<07:27,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 295/1287 [02:12<07:26,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 296/1287 [02:13<07:28,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 297/1287 [02:14<07:27,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 298/1287 [02:14<07:25,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 299/1287 [02:14<07:24,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 300/1287 [02:14<07:23,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 301/1287 [02:17<07:32,  2.18it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  23%|██▎       | 302/1287 [02:18<07:30,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▎       | 303/1287 [02:18<07:29,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▎       | 304/1287 [02:18<07:28,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▎       | 305/1287 [02:18<07:26,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 306/1287 [02:19<07:27,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 307/1287 [02:19<07:25,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 308/1287 [02:19<07:24,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 309/1287 [02:20<07:23,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 310/1287 [02:20<07:22,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 311/1287 [02:21<07:24,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 312/1287 [02:21<07:23,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 313/1287 [02:22<07:21,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 314/1287 [02:22<07:20,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  24%|██▍       | 315/1287 [02:22<07:19,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▍       | 316/1287 [02:23<07:22,  2.19it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▍       | 317/1287 [02:24<07:21,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▍       | 318/1287 [02:24<07:20,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▍       | 319/1287 [02:24<07:18,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▍       | 320/1287 [02:24<07:17,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▍       | 321/1287 [02:25<07:18,  2.20it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▌       | 322/1287 [02:25<07:17,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▌       | 323/1287 [02:26<07:16,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▌       | 324/1287 [02:26<07:15,  2.21it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▌       | 325/1287 [02:26<07:13,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▌       | 326/1287 [02:26<07:12,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▌       | 327/1287 [02:27<07:12,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  25%|██▌       | 328/1287 [02:27<07:11,  2.22it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 329/1287 [02:27<07:10,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 330/1287 [02:28<07:09,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 331/1287 [02:28<07:08,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 332/1287 [02:28<07:07,  2.23it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 333/1287 [02:28<07:06,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 334/1287 [02:29<07:05,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 335/1287 [02:29<07:04,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 336/1287 [02:29<07:03,  2.24it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▌       | 337/1287 [02:29<07:02,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▋       | 338/1287 [02:30<07:01,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▋       | 339/1287 [02:30<07:01,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▋       | 340/1287 [02:30<07:00,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  26%|██▋       | 341/1287 [02:31<06:59,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 342/1287 [02:31<06:58,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 343/1287 [02:31<06:57,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 344/1287 [02:32<06:57,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 345/1287 [02:32<06:56,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 346/1287 [02:32<06:55,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 347/1287 [02:32<06:54,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 348/1287 [02:33<06:53,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 349/1287 [02:34<06:55,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 350/1287 [02:34<06:53,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 351/1287 [02:34<06:52,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 352/1287 [02:35<06:51,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  27%|██▋       | 353/1287 [02:35<06:50,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 354/1287 [02:37<06:54,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 355/1287 [02:37<06:53,  2.25it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 356/1287 [02:37<06:52,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 357/1287 [02:37<06:51,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 358/1287 [02:38<06:50,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 359/1287 [02:38<06:50,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 360/1287 [02:39<06:49,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 361/1287 [02:39<06:48,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 362/1287 [02:39<06:47,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 363/1287 [02:39<06:46,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 364/1287 [02:41<06:49,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 365/1287 [02:41<06:47,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  28%|██▊       | 366/1287 [02:41<06:46,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▊       | 367/1287 [02:42<06:47,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▊       | 368/1287 [02:42<06:46,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▊       | 369/1287 [02:43<06:45,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▊       | 370/1287 [02:43<06:44,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 371/1287 [02:43<06:43,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 372/1287 [02:44<06:45,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 373/1287 [02:44<06:44,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 374/1287 [02:45<06:43,  2.26it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 375/1287 [02:45<06:42,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 376/1287 [02:45<06:41,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 377/1287 [02:45<06:40,  2.27it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 378/1287 [02:46<06:39,  2.28it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  29%|██▉       | 379/1287 [02:46<06:38,  2.28it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|██▉       | 380/1287 [02:46<06:37,  2.28it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|██▉       | 381/1287 [02:46<06:36,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|██▉       | 382/1287 [02:46<06:35,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|██▉       | 383/1287 [02:47<06:34,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|██▉       | 384/1287 [02:47<06:33,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|██▉       | 385/1287 [02:47<06:32,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|██▉       | 386/1287 [02:48<06:32,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|███       | 387/1287 [02:48<06:31,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|███       | 388/1287 [02:49<06:33,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|███       | 389/1287 [02:49<06:32,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|███       | 390/1287 [02:50<06:31,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|███       | 391/1287 [02:50<06:30,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  30%|███       | 392/1287 [02:50<06:29,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 393/1287 [02:51<06:30,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 394/1287 [02:51<06:29,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 395/1287 [02:52<06:28,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 396/1287 [02:52<06:27,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 397/1287 [02:52<06:26,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 398/1287 [02:53<06:27,  2.29it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 399/1287 [02:53<06:26,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 400/1287 [02:53<06:25,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 401/1287 [02:54<06:24,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███       | 402/1287 [02:54<06:24,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███▏      | 403/1287 [02:55<06:24,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███▏      | 404/1287 [02:55<06:23,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  31%|███▏      | 405/1287 [02:55<06:22,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 406/1287 [02:55<06:21,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 407/1287 [02:55<06:20,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 408/1287 [02:56<06:20,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 409/1287 [02:57<06:20,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 410/1287 [02:57<06:19,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 411/1287 [02:57<06:18,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 412/1287 [02:58<06:18,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 413/1287 [02:58<06:17,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 414/1287 [02:59<06:17,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 415/1287 [02:59<06:16,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 416/1287 [02:59<06:15,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 417/1287 [02:59<06:14,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  32%|███▏      | 418/1287 [02:59<06:13,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 419/1287 [03:00<06:14,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 420/1287 [03:01<06:13,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 421/1287 [03:01<06:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 422/1287 [03:01<06:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 423/1287 [03:01<06:11,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 424/1287 [03:03<06:13,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 425/1287 [03:03<06:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 426/1287 [03:03<06:11,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 427/1287 [03:03<06:10,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 428/1287 [03:04<06:09,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 429/1287 [03:05<06:11,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 430/1287 [03:05<06:10,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  33%|███▎      | 431/1287 [03:06<06:09,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▎      | 432/1287 [03:06<06:08,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▎      | 433/1287 [03:06<06:07,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▎      | 434/1287 [03:07<06:08,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 435/1287 [03:07<06:07,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 436/1287 [03:07<06:06,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 437/1287 [03:07<06:05,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 438/1287 [03:08<06:04,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 439/1287 [03:08<06:04,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 440/1287 [03:08<06:03,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 441/1287 [03:08<06:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 442/1287 [03:09<06:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 443/1287 [03:09<06:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  34%|███▍      | 444/1287 [03:10<06:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▍      | 445/1287 [03:10<06:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▍      | 446/1287 [03:11<06:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▍      | 447/1287 [03:11<05:59,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▍      | 448/1287 [03:11<05:59,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▍      | 449/1287 [03:11<05:58,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▍      | 450/1287 [03:12<05:57,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▌      | 451/1287 [03:12<05:56,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▌      | 452/1287 [03:12<05:56,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▌      | 453/1287 [03:12<05:55,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▌      | 454/1287 [03:13<05:54,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▌      | 455/1287 [03:13<05:53,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  35%|███▌      | 456/1287 [03:13<05:52,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 457/1287 [03:13<05:51,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 458/1287 [03:15<05:53,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 459/1287 [03:15<05:52,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 460/1287 [03:15<05:51,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 461/1287 [03:15<05:51,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 462/1287 [03:16<05:50,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 463/1287 [03:17<05:51,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 464/1287 [03:17<05:50,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 465/1287 [03:18<05:50,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▌      | 466/1287 [03:18<05:49,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▋      | 467/1287 [03:18<05:48,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▋      | 468/1287 [03:19<05:49,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  36%|███▋      | 469/1287 [03:19<05:48,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 470/1287 [03:19<05:47,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 471/1287 [03:20<05:46,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 472/1287 [03:20<05:45,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 473/1287 [03:20<05:45,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 474/1287 [03:20<05:44,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 475/1287 [03:21<05:44,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 476/1287 [03:21<05:43,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 477/1287 [03:21<05:42,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 478/1287 [03:22<05:41,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 479/1287 [03:22<05:42,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 480/1287 [03:23<05:41,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 481/1287 [03:23<05:40,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  37%|███▋      | 482/1287 [03:23<05:39,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 483/1287 [03:23<05:39,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 484/1287 [03:24<05:38,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 485/1287 [03:24<05:38,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 486/1287 [03:24<05:37,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 487/1287 [03:24<05:36,  2.38it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 488/1287 [03:26<05:38,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 489/1287 [03:27<05:38,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 490/1287 [03:27<05:37,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 491/1287 [03:27<05:37,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 492/1287 [03:28<05:36,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 493/1287 [03:28<05:35,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 494/1287 [03:33<05:42,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  38%|███▊      | 495/1287 [03:33<05:41,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▊      | 496/1287 [03:33<05:40,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▊      | 497/1287 [03:33<05:39,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▊      | 498/1287 [03:34<05:39,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 499/1287 [03:35<05:40,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 500/1287 [03:35<05:39,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 501/1287 [03:35<05:38,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 502/1287 [03:36<05:38,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 503/1287 [03:36<05:37,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 504/1287 [03:38<05:38,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 505/1287 [03:38<05:38,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 506/1287 [03:38<05:37,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 507/1287 [03:38<05:36,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  39%|███▉      | 508/1287 [03:39<05:36,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|███▉      | 509/1287 [03:40<05:37,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|███▉      | 510/1287 [03:40<05:36,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|███▉      | 511/1287 [03:41<05:35,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|███▉      | 512/1287 [03:41<05:34,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|███▉      | 513/1287 [03:41<05:34,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|███▉      | 514/1287 [03:42<05:34,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|████      | 515/1287 [03:42<05:34,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|████      | 516/1287 [03:43<05:33,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|████      | 517/1287 [03:43<05:32,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|████      | 518/1287 [03:43<05:32,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|████      | 519/1287 [03:44<05:31,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|████      | 520/1287 [03:44<05:30,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  40%|████      | 521/1287 [03:44<05:29,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 522/1287 [03:44<05:29,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 523/1287 [03:44<05:28,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 524/1287 [03:46<05:30,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 525/1287 [03:47<05:29,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 526/1287 [03:47<05:28,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 527/1287 [03:47<05:28,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 528/1287 [03:47<05:27,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 529/1287 [03:48<05:27,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████      | 530/1287 [03:48<05:26,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████▏     | 531/1287 [03:49<05:26,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████▏     | 532/1287 [03:49<05:25,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████▏     | 533/1287 [03:49<05:24,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  41%|████▏     | 534/1287 [03:49<05:23,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 535/1287 [03:49<05:23,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 536/1287 [03:50<05:22,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 537/1287 [03:51<05:23,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 538/1287 [03:51<05:22,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 539/1287 [03:52<05:22,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 540/1287 [03:52<05:21,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 541/1287 [03:52<05:20,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 542/1287 [03:52<05:20,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 543/1287 [03:55<05:22,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 544/1287 [03:55<05:21,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 545/1287 [03:55<05:20,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  42%|████▏     | 546/1287 [03:55<05:20,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 547/1287 [03:56<05:19,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 548/1287 [03:56<05:18,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 549/1287 [03:56<05:18,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 550/1287 [03:56<05:17,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 551/1287 [03:57<05:16,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 552/1287 [03:57<05:15,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 553/1287 [03:57<05:15,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 554/1287 [03:57<05:14,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 555/1287 [03:57<05:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 556/1287 [03:58<05:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 557/1287 [03:58<05:12,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 558/1287 [03:58<05:11,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  43%|████▎     | 559/1287 [04:01<05:14,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▎     | 560/1287 [04:01<05:13,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▎     | 561/1287 [04:02<05:13,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▎     | 562/1287 [04:02<05:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▎     | 563/1287 [04:02<05:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 564/1287 [04:05<05:14,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 565/1287 [04:05<05:13,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 566/1287 [04:05<05:13,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 567/1287 [04:06<05:12,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 568/1287 [04:06<05:11,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 569/1287 [04:06<05:11,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 570/1287 [04:08<05:12,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 571/1287 [04:08<05:11,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  44%|████▍     | 572/1287 [04:08<05:10,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▍     | 573/1287 [04:08<05:09,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▍     | 574/1287 [04:08<05:09,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▍     | 575/1287 [04:10<05:09,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▍     | 576/1287 [04:10<05:09,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▍     | 577/1287 [04:10<05:08,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▍     | 578/1287 [04:10<05:07,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▍     | 579/1287 [04:11<05:07,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▌     | 580/1287 [04:11<05:07,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▌     | 581/1287 [04:12<05:06,  2.30it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▌     | 582/1287 [04:12<05:05,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▌     | 583/1287 [04:12<05:04,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▌     | 584/1287 [04:12<05:04,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  45%|████▌     | 585/1287 [04:12<05:03,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 586/1287 [04:13<05:02,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 587/1287 [04:13<05:02,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 588/1287 [04:13<05:01,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 589/1287 [04:13<05:00,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 590/1287 [04:14<05:00,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 591/1287 [04:14<04:59,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 592/1287 [04:14<04:58,  2.33it/s]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:845: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0. 
+  warnings.warn(str(msg))
+preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 593/1287 [04:14<04:58,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 594/1287 [04:15<04:57,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▌     | 595/1287 [04:15<04:56,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▋     | 596/1287 [04:15<04:56,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▋     | 597/1287 [04:15<04:55,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  46%|████▋     | 598/1287 [04:15<04:54,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 599/1287 [04:16<04:55,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 600/1287 [04:17<04:54,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 601/1287 [04:17<04:53,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 602/1287 [04:17<04:53,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 603/1287 [04:17<04:52,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 604/1287 [04:19<04:53,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 605/1287 [04:19<04:52,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 606/1287 [04:19<04:52,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 607/1287 [04:20<04:51,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 608/1287 [04:20<04:50,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 609/1287 [04:20<04:50,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 610/1287 [04:21<04:49,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  47%|████▋     | 611/1287 [04:21<04:49,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 612/1287 [04:21<04:48,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 613/1287 [04:21<04:47,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 614/1287 [04:22<04:47,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 615/1287 [04:22<04:46,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 616/1287 [04:22<04:45,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 617/1287 [04:22<04:45,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 618/1287 [04:22<04:44,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 619/1287 [04:23<04:44,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 620/1287 [04:24<04:44,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 621/1287 [04:24<04:43,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 622/1287 [04:24<04:42,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 623/1287 [04:24<04:42,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  48%|████▊     | 624/1287 [04:26<04:43,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▊     | 625/1287 [04:26<04:42,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▊     | 626/1287 [04:26<04:41,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▊     | 627/1287 [04:27<04:41,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 628/1287 [04:27<04:40,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 629/1287 [04:28<04:40,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 630/1287 [04:28<04:39,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 631/1287 [04:28<04:39,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 632/1287 [04:28<04:38,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 633/1287 [04:29<04:37,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 634/1287 [04:29<04:37,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 635/1287 [04:30<04:37,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 636/1287 [04:30<04:36,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  49%|████▉     | 637/1287 [04:30<04:36,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|████▉     | 638/1287 [04:30<04:35,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|████▉     | 639/1287 [04:30<04:34,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|████▉     | 640/1287 [04:31<04:34,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|████▉     | 641/1287 [04:35<04:37,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|████▉     | 642/1287 [04:35<04:37,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|████▉     | 643/1287 [04:36<04:36,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|█████     | 644/1287 [04:36<04:35,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|█████     | 645/1287 [04:36<04:35,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|█████     | 646/1287 [04:36<04:34,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|█████     | 647/1287 [04:36<04:33,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|█████     | 648/1287 [04:37<04:33,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  50%|█████     | 649/1287 [04:37<04:32,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 650/1287 [04:37<04:31,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 651/1287 [04:37<04:31,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 652/1287 [04:37<04:30,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 653/1287 [04:38<04:30,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 654/1287 [04:39<04:30,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 655/1287 [04:39<04:29,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 656/1287 [04:39<04:28,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 657/1287 [04:41<04:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 658/1287 [04:41<04:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████     | 659/1287 [04:41<04:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████▏    | 660/1287 [04:41<04:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████▏    | 661/1287 [04:41<04:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  51%|█████▏    | 662/1287 [04:42<04:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 663/1287 [04:43<04:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 664/1287 [04:43<04:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 665/1287 [04:43<04:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 666/1287 [04:43<04:24,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 667/1287 [04:45<04:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 668/1287 [04:45<04:24,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 669/1287 [04:45<04:23,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 670/1287 [04:45<04:23,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 671/1287 [04:46<04:22,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 672/1287 [04:46<04:22,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 673/1287 [04:47<04:21,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 674/1287 [04:47<04:21,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  52%|█████▏    | 675/1287 [04:47<04:20,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 676/1287 [04:47<04:20,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 677/1287 [04:49<04:20,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 678/1287 [04:49<04:19,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 679/1287 [04:49<04:19,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 680/1287 [04:49<04:18,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 681/1287 [04:49<04:18,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 682/1287 [04:51<04:18,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 683/1287 [04:51<04:17,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 684/1287 [04:51<04:16,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 685/1287 [04:51<04:16,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 686/1287 [04:51<04:15,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 687/1287 [04:52<04:15,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  53%|█████▎    | 688/1287 [04:52<04:14,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▎    | 689/1287 [04:52<04:13,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▎    | 690/1287 [04:52<04:13,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▎    | 691/1287 [04:53<04:12,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 692/1287 [04:53<04:12,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 693/1287 [04:53<04:11,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 694/1287 [04:53<04:10,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 695/1287 [04:53<04:10,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 696/1287 [04:54<04:09,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 697/1287 [04:54<04:09,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 698/1287 [04:55<04:09,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 699/1287 [04:55<04:08,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 700/1287 [04:57<04:09,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  54%|█████▍    | 701/1287 [05:02<04:13,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▍    | 702/1287 [05:03<04:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▍    | 703/1287 [05:03<04:11,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▍    | 704/1287 [05:03<04:11,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▍    | 705/1287 [05:03<04:10,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▍    | 706/1287 [05:04<04:10,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▍    | 707/1287 [05:04<04:09,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▌    | 708/1287 [05:04<04:08,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▌    | 709/1287 [05:04<04:08,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▌    | 710/1287 [05:04<04:07,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▌    | 711/1287 [05:06<04:08,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▌    | 712/1287 [05:06<04:07,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▌    | 713/1287 [05:07<04:07,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  55%|█████▌    | 714/1287 [05:07<04:06,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 715/1287 [05:07<04:06,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 716/1287 [05:07<04:05,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 717/1287 [05:08<04:05,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 718/1287 [05:10<04:05,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 719/1287 [05:10<04:05,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 720/1287 [05:10<04:04,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 721/1287 [05:10<04:04,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 722/1287 [05:11<04:03,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▌    | 723/1287 [05:11<04:03,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▋    | 724/1287 [05:11<04:02,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▋    | 725/1287 [05:12<04:01,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▋    | 726/1287 [05:12<04:01,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  56%|█████▋    | 727/1287 [05:12<04:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 728/1287 [05:14<04:01,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 729/1287 [05:15<04:01,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 730/1287 [05:15<04:00,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 731/1287 [05:15<04:00,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 732/1287 [05:15<03:59,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 733/1287 [05:16<03:58,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 734/1287 [05:16<03:58,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 735/1287 [05:16<03:57,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 736/1287 [05:16<03:57,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 737/1287 [05:17<03:56,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 738/1287 [05:18<03:56,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 739/1287 [05:18<03:56,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  57%|█████▋    | 740/1287 [05:18<03:55,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 741/1287 [05:18<03:54,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 742/1287 [05:19<03:54,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 743/1287 [05:19<03:53,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 744/1287 [05:19<03:53,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 745/1287 [05:19<03:52,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 746/1287 [05:20<03:52,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 747/1287 [05:20<03:51,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 748/1287 [05:21<03:51,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 749/1287 [05:21<03:51,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 750/1287 [05:22<03:50,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 751/1287 [05:22<03:50,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  58%|█████▊    | 752/1287 [05:22<03:49,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▊    | 753/1287 [05:22<03:48,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▊    | 754/1287 [05:22<03:48,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▊    | 755/1287 [05:23<03:47,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▊    | 756/1287 [05:23<03:47,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 757/1287 [05:23<03:46,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 758/1287 [05:23<03:46,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 759/1287 [05:24<03:45,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 760/1287 [05:24<03:45,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 761/1287 [05:25<03:44,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 762/1287 [05:25<03:44,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 763/1287 [05:25<03:43,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 764/1287 [05:27<03:43,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  59%|█████▉    | 765/1287 [05:27<03:43,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|█████▉    | 766/1287 [05:27<03:42,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|█████▉    | 767/1287 [05:27<03:42,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|█████▉    | 768/1287 [05:27<03:41,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|█████▉    | 769/1287 [05:29<03:42,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|█████▉    | 770/1287 [05:29<03:41,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|█████▉    | 771/1287 [05:30<03:40,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|█████▉    | 772/1287 [05:30<03:40,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|██████    | 773/1287 [05:30<03:39,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|██████    | 774/1287 [05:31<03:39,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|██████    | 775/1287 [05:31<03:39,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|██████    | 776/1287 [05:32<03:38,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|██████    | 777/1287 [05:32<03:38,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  60%|██████    | 778/1287 [05:32<03:37,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 779/1287 [05:34<03:38,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 780/1287 [05:34<03:37,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 781/1287 [05:34<03:36,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 782/1287 [05:35<03:36,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 783/1287 [05:35<03:35,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 784/1287 [05:35<03:35,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 785/1287 [05:35<03:34,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 786/1287 [05:36<03:34,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 787/1287 [05:36<03:33,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████    | 788/1287 [05:36<03:33,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████▏   | 789/1287 [05:36<03:32,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████▏   | 790/1287 [05:36<03:32,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  61%|██████▏   | 791/1287 [05:37<03:31,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 792/1287 [05:38<03:31,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 793/1287 [05:38<03:30,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 794/1287 [05:38<03:30,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 795/1287 [05:38<03:29,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 796/1287 [05:38<03:29,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 797/1287 [05:39<03:28,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 798/1287 [05:39<03:28,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 799/1287 [05:41<03:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 800/1287 [05:41<03:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 801/1287 [05:41<03:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 802/1287 [05:41<03:26,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 803/1287 [05:42<03:26,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  62%|██████▏   | 804/1287 [05:43<03:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 805/1287 [05:43<03:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 806/1287 [05:43<03:25,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 807/1287 [05:43<03:24,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 808/1287 [05:44<03:23,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 809/1287 [05:44<03:23,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 810/1287 [05:45<03:23,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 811/1287 [05:45<03:22,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 812/1287 [05:45<03:22,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 813/1287 [05:45<03:21,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 814/1287 [05:47<03:22,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 815/1287 [05:48<03:21,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 816/1287 [05:48<03:21,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  63%|██████▎   | 817/1287 [05:48<03:20,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▎   | 818/1287 [05:48<03:20,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▎   | 819/1287 [05:49<03:19,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▎   | 820/1287 [05:49<03:18,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 821/1287 [05:49<03:18,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 822/1287 [05:49<03:17,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 823/1287 [05:49<03:17,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 824/1287 [05:50<03:16,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 825/1287 [05:50<03:16,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 826/1287 [05:50<03:15,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 827/1287 [05:51<03:15,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 828/1287 [05:51<03:15,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 829/1287 [05:52<03:14,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  64%|██████▍   | 830/1287 [05:52<03:14,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▍   | 831/1287 [05:53<03:13,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▍   | 832/1287 [05:53<03:13,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▍   | 833/1287 [05:54<03:12,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▍   | 834/1287 [05:54<03:12,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▍   | 835/1287 [05:54<03:12,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▍   | 836/1287 [05:55<03:11,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▌   | 837/1287 [05:55<03:11,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▌   | 838/1287 [05:55<03:10,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▌   | 839/1287 [05:56<03:10,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▌   | 840/1287 [05:56<03:09,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▌   | 841/1287 [05:56<03:09,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  65%|██████▌   | 842/1287 [05:56<03:08,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 843/1287 [05:56<03:08,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 844/1287 [05:57<03:07,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 845/1287 [05:57<03:07,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 846/1287 [05:58<03:06,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 847/1287 [05:58<03:06,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 848/1287 [05:58<03:05,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 849/1287 [05:59<03:05,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 850/1287 [05:59<03:04,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 851/1287 [05:59<03:04,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▌   | 852/1287 [05:59<03:03,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▋   | 853/1287 [05:59<03:03,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▋   | 854/1287 [06:00<03:02,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  66%|██████▋   | 855/1287 [06:01<03:02,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 856/1287 [06:01<03:01,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 857/1287 [06:01<03:01,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 858/1287 [06:02<03:01,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 859/1287 [06:03<03:01,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 860/1287 [06:03<03:00,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 861/1287 [06:03<02:59,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 862/1287 [06:03<02:59,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 863/1287 [06:04<02:58,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 864/1287 [06:05<02:58,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 865/1287 [06:05<02:58,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 866/1287 [06:05<02:57,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 867/1287 [06:05<02:57,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  67%|██████▋   | 868/1287 [06:06<02:56,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 869/1287 [06:06<02:56,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 870/1287 [06:07<02:55,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 871/1287 [06:07<02:55,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 872/1287 [06:07<02:54,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 873/1287 [06:07<02:54,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 874/1287 [06:08<02:54,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 875/1287 [06:08<02:53,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 876/1287 [06:09<02:53,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 877/1287 [06:10<02:53,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 878/1287 [06:11<02:52,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 879/1287 [06:11<02:52,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 880/1287 [06:11<02:51,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  68%|██████▊   | 881/1287 [06:11<02:51,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▊   | 882/1287 [06:12<02:51,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▊   | 883/1287 [06:12<02:50,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▊   | 884/1287 [06:13<02:50,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 885/1287 [06:13<02:49,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 886/1287 [06:13<02:49,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 887/1287 [06:15<02:49,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 888/1287 [06:15<02:48,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 889/1287 [06:15<02:48,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 890/1287 [06:15<02:47,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 891/1287 [06:16<02:47,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 892/1287 [06:16<02:46,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 893/1287 [06:16<02:46,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  69%|██████▉   | 894/1287 [06:17<02:45,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|██████▉   | 895/1287 [06:17<02:45,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|██████▉   | 896/1287 [06:17<02:44,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|██████▉   | 897/1287 [06:18<02:44,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|██████▉   | 898/1287 [06:18<02:43,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|██████▉   | 899/1287 [06:19<02:43,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|██████▉   | 900/1287 [06:19<02:43,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|███████   | 901/1287 [06:19<02:42,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|███████   | 902/1287 [06:19<02:42,  2.38it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|███████   | 903/1287 [06:20<02:41,  2.38it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|███████   | 904/1287 [06:20<02:41,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|███████   | 905/1287 [06:21<02:40,  2.37it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|███████   | 906/1287 [06:26<02:42,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  70%|███████   | 907/1287 [06:26<02:42,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 908/1287 [06:26<02:41,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 909/1287 [06:27<02:41,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 910/1287 [06:27<02:40,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 911/1287 [06:29<02:40,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 912/1287 [06:29<02:40,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 913/1287 [06:29<02:39,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 914/1287 [06:29<02:39,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 915/1287 [06:30<02:38,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████   | 916/1287 [06:30<02:38,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████▏  | 917/1287 [06:30<02:37,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████▏  | 918/1287 [06:30<02:37,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████▏  | 919/1287 [06:31<02:36,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  71%|███████▏  | 920/1287 [06:31<02:36,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 921/1287 [06:31<02:35,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 922/1287 [06:32<02:35,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 923/1287 [06:32<02:34,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 924/1287 [06:32<02:34,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 925/1287 [06:32<02:33,  2.36it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 926/1287 [06:34<02:33,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 927/1287 [06:34<02:33,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 928/1287 [06:34<02:32,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 929/1287 [06:34<02:32,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 930/1287 [06:34<02:31,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 931/1287 [06:35<02:31,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 932/1287 [06:36<02:30,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  72%|███████▏  | 933/1287 [06:36<02:30,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 934/1287 [06:39<02:31,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 935/1287 [06:39<02:30,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 936/1287 [06:40<02:30,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 937/1287 [06:40<02:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 938/1287 [06:40<02:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 939/1287 [06:41<02:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 940/1287 [06:41<02:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 941/1287 [06:41<02:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 942/1287 [06:41<02:27,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 943/1287 [06:41<02:26,  2.35it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 944/1287 [06:43<02:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  73%|███████▎  | 945/1287 [06:43<02:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▎  | 946/1287 [06:46<02:26,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▎  | 947/1287 [06:47<02:26,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▎  | 948/1287 [06:47<02:25,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▎  | 949/1287 [06:47<02:25,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 950/1287 [06:47<02:24,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 951/1287 [06:47<02:24,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 952/1287 [06:48<02:23,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 953/1287 [06:48<02:23,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 954/1287 [06:48<02:22,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 955/1287 [06:48<02:22,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 956/1287 [06:48<02:21,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 957/1287 [06:53<02:22,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  74%|███████▍  | 958/1287 [06:53<02:22,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▍  | 959/1287 [06:53<02:21,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▍  | 960/1287 [06:54<02:21,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▍  | 961/1287 [06:54<02:20,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▍  | 962/1287 [06:54<02:20,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▍  | 963/1287 [06:54<02:19,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▍  | 964/1287 [06:55<02:19,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▍  | 965/1287 [06:55<02:18,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▌  | 966/1287 [06:56<02:18,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▌  | 967/1287 [06:56<02:17,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▌  | 968/1287 [06:56<02:17,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▌  | 969/1287 [06:57<02:17,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▌  | 970/1287 [06:58<02:16,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  75%|███████▌  | 971/1287 [06:58<02:16,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 972/1287 [06:58<02:15,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 973/1287 [06:58<02:15,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 974/1287 [06:59<02:14,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 975/1287 [06:59<02:14,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 976/1287 [06:59<02:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 977/1287 [06:59<02:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 978/1287 [07:00<02:12,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 979/1287 [07:01<02:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 980/1287 [07:01<02:12,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▌  | 981/1287 [07:01<02:11,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▋  | 982/1287 [07:02<02:11,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▋  | 983/1287 [07:02<02:10,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  76%|███████▋  | 984/1287 [07:03<02:10,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 985/1287 [07:03<02:09,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 986/1287 [07:04<02:09,  2.33it/s]/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/PIL/TiffImagePlugin.py:845: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0. 
+  warnings.warn(str(msg))
+preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 987/1287 [07:04<02:08,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 988/1287 [07:04<02:08,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 989/1287 [07:05<02:08,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 990/1287 [07:05<02:07,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 991/1287 [07:05<02:07,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 992/1287 [07:06<02:06,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 993/1287 [07:06<02:06,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 994/1287 [07:07<02:05,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 995/1287 [07:09<02:05,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 996/1287 [07:09<02:05,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  77%|███████▋  | 997/1287 [07:09<02:04,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 998/1287 [07:09<02:04,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 999/1287 [07:10<02:04,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1000/1287 [07:10<02:03,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1001/1287 [07:10<02:03,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1002/1287 [07:10<02:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1003/1287 [07:11<02:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1004/1287 [07:11<02:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1005/1287 [07:12<02:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1006/1287 [07:12<02:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1007/1287 [07:13<02:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1008/1287 [07:13<01:59,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1009/1287 [07:14<01:59,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  78%|███████▊  | 1010/1287 [07:14<01:59,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▊  | 1011/1287 [07:14<01:58,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▊  | 1012/1287 [07:14<01:58,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▊  | 1013/1287 [07:15<01:57,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1014/1287 [07:16<01:57,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1015/1287 [07:16<01:57,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1016/1287 [07:16<01:56,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1017/1287 [07:17<01:56,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1018/1287 [07:17<01:55,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1019/1287 [07:20<01:55,  2.31it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1020/1287 [07:20<01:55,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1021/1287 [07:20<01:54,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1022/1287 [07:20<01:54,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  79%|███████▉  | 1023/1287 [07:21<01:53,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|███████▉  | 1024/1287 [07:21<01:53,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|███████▉  | 1025/1287 [07:22<01:53,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|███████▉  | 1026/1287 [07:22<01:52,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|███████▉  | 1027/1287 [07:22<01:52,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|███████▉  | 1028/1287 [07:22<01:51,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|███████▉  | 1029/1287 [07:23<01:51,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|████████  | 1030/1287 [07:24<01:50,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|████████  | 1031/1287 [07:24<01:50,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|████████  | 1032/1287 [07:24<01:49,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|████████  | 1033/1287 [07:24<01:49,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|████████  | 1034/1287 [07:26<01:49,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|████████  | 1035/1287 [07:26<01:48,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  80%|████████  | 1036/1287 [07:26<01:48,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1037/1287 [07:27<01:47,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1038/1287 [07:27<01:47,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1039/1287 [07:27<01:46,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1040/1287 [07:27<01:46,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1041/1287 [07:28<01:45,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1042/1287 [07:28<01:45,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1043/1287 [07:28<01:44,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1044/1287 [07:29<01:44,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████  | 1045/1287 [07:29<01:44,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████▏ | 1046/1287 [07:30<01:43,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████▏ | 1047/1287 [07:31<01:43,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  81%|████████▏ | 1048/1287 [07:31<01:42,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1049/1287 [07:31<01:42,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1050/1287 [07:31<01:41,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1051/1287 [07:31<01:41,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1052/1287 [07:32<01:41,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1053/1287 [07:32<01:40,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1054/1287 [07:32<01:40,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1055/1287 [07:32<01:39,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1056/1287 [07:33<01:39,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1057/1287 [07:33<01:38,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1058/1287 [07:33<01:38,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1059/1287 [07:34<01:37,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1060/1287 [07:35<01:37,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  82%|████████▏ | 1061/1287 [07:35<01:36,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1062/1287 [07:35<01:36,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1063/1287 [07:35<01:36,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1064/1287 [07:36<01:35,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1065/1287 [07:36<01:35,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1066/1287 [07:36<01:34,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1067/1287 [07:36<01:34,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1068/1287 [07:37<01:33,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1069/1287 [07:37<01:33,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1070/1287 [07:37<01:32,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1071/1287 [07:38<01:32,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1072/1287 [07:38<01:31,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1073/1287 [07:38<01:31,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  83%|████████▎ | 1074/1287 [07:39<01:31,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▎ | 1075/1287 [07:40<01:30,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▎ | 1076/1287 [07:40<01:30,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▎ | 1077/1287 [07:40<01:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1078/1287 [07:40<01:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1079/1287 [07:41<01:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1080/1287 [07:41<01:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1081/1287 [07:42<01:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1082/1287 [07:42<01:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1083/1287 [07:42<01:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1084/1287 [07:43<01:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1085/1287 [07:44<01:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1086/1287 [07:44<01:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  84%|████████▍ | 1087/1287 [07:44<01:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▍ | 1088/1287 [07:44<01:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▍ | 1089/1287 [07:45<01:24,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▍ | 1090/1287 [07:45<01:24,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▍ | 1091/1287 [07:45<01:23,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▍ | 1092/1287 [07:46<01:23,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▍ | 1093/1287 [07:46<01:22,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▌ | 1094/1287 [07:47<01:22,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▌ | 1095/1287 [07:47<01:22,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▌ | 1096/1287 [07:48<01:21,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▌ | 1097/1287 [07:48<01:21,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▌ | 1098/1287 [07:48<01:20,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▌ | 1099/1287 [07:54<01:21,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  85%|████████▌ | 1100/1287 [07:54<01:20,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1101/1287 [07:54<01:20,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1102/1287 [07:55<01:19,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1103/1287 [07:55<01:19,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1104/1287 [07:55<01:18,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1105/1287 [07:55<01:18,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1106/1287 [07:56<01:17,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1107/1287 [07:56<01:17,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1108/1287 [07:56<01:16,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1109/1287 [07:57<01:16,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▌ | 1110/1287 [07:57<01:16,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▋ | 1111/1287 [07:57<01:15,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▋ | 1112/1287 [07:58<01:15,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  86%|████████▋ | 1113/1287 [07:58<01:14,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1114/1287 [07:59<01:14,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1115/1287 [07:59<01:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1116/1287 [07:59<01:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1117/1287 [07:59<01:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1118/1287 [08:00<01:12,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1119/1287 [08:01<01:12,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1120/1287 [08:01<01:11,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1121/1287 [08:01<01:11,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1122/1287 [08:01<01:10,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1123/1287 [08:02<01:10,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1124/1287 [08:03<01:10,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1125/1287 [08:04<01:09,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  87%|████████▋ | 1126/1287 [08:05<01:09,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1127/1287 [08:05<01:08,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1128/1287 [08:05<01:08,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1129/1287 [08:05<01:07,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1130/1287 [08:06<01:07,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1131/1287 [08:06<01:07,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1132/1287 [08:06<01:06,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1133/1287 [08:06<01:06,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1134/1287 [08:08<01:05,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1135/1287 [08:08<01:05,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1136/1287 [08:08<01:04,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1137/1287 [08:09<01:04,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  88%|████████▊ | 1138/1287 [08:09<01:04,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▊ | 1139/1287 [08:09<01:03,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▊ | 1140/1287 [08:09<01:03,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▊ | 1141/1287 [08:10<01:02,  2.32it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▊ | 1142/1287 [08:11<01:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1143/1287 [08:11<01:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1144/1287 [08:11<01:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1145/1287 [08:11<01:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1146/1287 [08:11<01:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1147/1287 [08:12<01:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1148/1287 [08:12<00:59,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1149/1287 [08:13<00:59,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1150/1287 [08:13<00:58,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  89%|████████▉ | 1151/1287 [08:13<00:58,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|████████▉ | 1152/1287 [08:14<00:57,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|████████▉ | 1153/1287 [08:14<00:57,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|████████▉ | 1154/1287 [08:16<00:57,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|████████▉ | 1155/1287 [08:16<00:56,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|████████▉ | 1156/1287 [08:16<00:56,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|████████▉ | 1157/1287 [08:16<00:55,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|████████▉ | 1158/1287 [08:17<00:55,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|█████████ | 1159/1287 [08:17<00:54,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|█████████ | 1160/1287 [08:18<00:54,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|█████████ | 1161/1287 [08:18<00:54,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|█████████ | 1162/1287 [08:18<00:53,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|█████████ | 1163/1287 [08:18<00:53,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  90%|█████████ | 1164/1287 [08:18<00:52,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1165/1287 [08:19<00:52,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1166/1287 [08:19<00:51,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1167/1287 [08:19<00:51,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1168/1287 [08:20<00:51,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1169/1287 [08:20<00:50,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1170/1287 [08:21<00:50,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1171/1287 [08:21<00:49,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1172/1287 [08:22<00:49,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1173/1287 [08:22<00:48,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████ | 1174/1287 [08:22<00:48,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████▏| 1175/1287 [08:23<00:47,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████▏| 1176/1287 [08:23<00:47,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  91%|█████████▏| 1177/1287 [08:23<00:47,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1178/1287 [08:25<00:46,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1179/1287 [08:26<00:46,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1180/1287 [08:26<00:45,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1181/1287 [08:26<00:45,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1182/1287 [08:26<00:45,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1183/1287 [08:27<00:44,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1184/1287 [08:27<00:44,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1185/1287 [08:28<00:43,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1186/1287 [08:28<00:43,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1187/1287 [08:28<00:42,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1188/1287 [08:29<00:42,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1189/1287 [08:29<00:41,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  92%|█████████▏| 1190/1287 [08:29<00:41,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1191/1287 [08:29<00:41,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1192/1287 [08:31<00:40,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1193/1287 [08:31<00:40,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1194/1287 [08:31<00:39,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1195/1287 [08:32<00:39,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1196/1287 [08:32<00:38,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1197/1287 [08:32<00:38,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1198/1287 [08:32<00:38,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1199/1287 [08:33<00:37,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1200/1287 [08:33<00:37,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1201/1287 [08:33<00:36,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1202/1287 [08:33<00:36,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  93%|█████████▎| 1203/1287 [08:35<00:35,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▎| 1204/1287 [08:35<00:35,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▎| 1205/1287 [08:35<00:35,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▎| 1206/1287 [08:35<00:34,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1207/1287 [08:35<00:34,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1208/1287 [08:36<00:33,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1209/1287 [08:39<00:33,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1210/1287 [08:39<00:33,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1211/1287 [08:39<00:32,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1212/1287 [08:40<00:32,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1213/1287 [08:40<00:31,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1214/1287 [08:40<00:31,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1215/1287 [08:40<00:30,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  94%|█████████▍| 1216/1287 [08:40<00:30,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▍| 1217/1287 [08:40<00:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▍| 1218/1287 [08:41<00:29,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▍| 1219/1287 [08:42<00:29,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▍| 1220/1287 [08:42<00:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▍| 1221/1287 [08:42<00:28,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▍| 1222/1287 [08:42<00:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▌| 1223/1287 [08:43<00:27,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▌| 1224/1287 [08:43<00:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▌| 1225/1287 [08:44<00:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▌| 1226/1287 [08:44<00:26,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▌| 1227/1287 [08:44<00:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▌| 1228/1287 [08:44<00:25,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  95%|█████████▌| 1229/1287 [08:46<00:24,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1230/1287 [08:46<00:24,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1231/1287 [08:46<00:23,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1232/1287 [08:46<00:23,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1233/1287 [08:46<00:23,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1234/1287 [08:49<00:22,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1235/1287 [08:49<00:22,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1236/1287 [08:49<00:21,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1237/1287 [08:50<00:21,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▌| 1238/1287 [08:50<00:20,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▋| 1239/1287 [08:51<00:20,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▋| 1240/1287 [08:51<00:20,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  96%|█████████▋| 1241/1287 [08:52<00:19,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1242/1287 [08:52<00:19,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1243/1287 [08:52<00:18,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1244/1287 [08:53<00:18,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1245/1287 [08:53<00:18,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1246/1287 [08:53<00:17,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1247/1287 [08:54<00:17,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1248/1287 [08:54<00:16,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1249/1287 [08:55<00:16,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1250/1287 [08:56<00:15,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1251/1287 [08:56<00:15,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1252/1287 [08:56<00:15,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1253/1287 [08:56<00:14,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  97%|█████████▋| 1254/1287 [08:57<00:14,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1255/1287 [08:57<00:13,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1256/1287 [08:58<00:13,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1257/1287 [08:59<00:12,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1258/1287 [08:59<00:12,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1259/1287 [08:59<00:11,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1260/1287 [08:59<00:11,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1261/1287 [09:00<00:11,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1262/1287 [09:00<00:10,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1263/1287 [09:00<00:10,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1264/1287 [09:00<00:09,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1265/1287 [09:01<00:09,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1266/1287 [09:01<00:08,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  98%|█████████▊| 1267/1287 [09:01<00:08,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▊| 1268/1287 [09:01<00:08,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▊| 1269/1287 [09:01<00:07,  2.34it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▊| 1270/1287 [09:05<00:07,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1271/1287 [09:05<00:06,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1272/1287 [09:05<00:06,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1273/1287 [09:05<00:06,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1274/1287 [09:06<00:05,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1275/1287 [09:08<00:05,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1276/1287 [09:08<00:04,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1277/1287 [09:08<00:04,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1278/1287 [09:09<00:03,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1279/1287 [09:09<00:03,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0:  99%|█████████▉| 1280/1287 [09:09<00:03,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0: 100%|█████████▉| 1281/1287 [09:09<00:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0: 100%|█████████▉| 1282/1287 [09:09<00:02,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0: 100%|█████████▉| 1283/1287 [09:10<00:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0: 100%|█████████▉| 1284/1287 [09:10<00:01,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0: 100%|█████████▉| 1285/1287 [09:10<00:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0: 100%|█████████▉| 1286/1287 [09:11<00:00,  2.33it/s]preds.shape, labels.shape: (torch.Size([1]), torch.Size([1]))
+Validation DataLoader 0: 100%|██████████| 1287/1287 [09:11<00:00,  2.33it/s]Validation DataLoader 0: 100%|██████████| 1287/1287 [09:11<00:00,  2.33it/s]
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     Validate metric           DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         val_acc            0.9510489702224731
+        val_loss            0.2330746203660965
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/users/oince22/vwsd/scripts/clip_ft_pred.py", line 52, in main
+    write_results(results, config['output'])
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/util.py", line 128, in write_results
+    image_files.extend(batch['image_files'])
+KeyError: 'image_files'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

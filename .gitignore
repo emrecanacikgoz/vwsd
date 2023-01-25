@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 .hydra
+scripts/checkpoints
+scripts_cnet/checkpoints

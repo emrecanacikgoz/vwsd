@@ -1,0 +1,18 @@
+=======================
+Loading Anaconda Module...
+"data":    {'debug': False, 'batch_size': 1, 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}
+"model":   {'load': True, 'name': 'CLIPFinetune'}
+"output":  clip_ft.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 15, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+{'load': True, 'name': 'CLIPFinetune'}
+/scratch/users/oince22/vwsd/scripts
+self.debug: False
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Config: {'seed': 12345, 'output': '/scratch/users/oince22/vwsd/scripts/clip_ft.out', 'trainer': {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 15, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}, 'model': {'name': 'CLIPFinetune'}, 'data': {'debug': False, 'batch_size': 4, 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}}
+self.debug: False
+self.debug: False
+Predicting: 0it [00:00, ?it/s]Predicting:   0%|          | 0/16 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|          | 0/16 [00:00<?, ?it/s]Predicting DataLoader 0:   6%|▋         | 1/16 [00:03<00:52,  3.47s/it]Predicting DataLoader 0:  12%|█▎        | 2/16 [00:03<00:25,  1.84s/it]Predicting DataLoader 0:  19%|█▉        | 3/16 [00:03<00:16,  1.29s/it]Predicting DataLoader 0:  25%|██▌       | 4/16 [00:04<00:12,  1.02s/it]Predicting DataLoader 0:  31%|███▏      | 5/16 [00:04<00:09,  1.17it/s]Predicting DataLoader 0:  38%|███▊      | 6/16 [00:04<00:07,  1.34it/s]Predicting DataLoader 0:  44%|████▍     | 7/16 [00:04<00:05,  1.50it/s]Predicting DataLoader 0:  50%|█████     | 8/16 [00:05<00:05,  1.51it/s]Predicting DataLoader 0:  56%|█████▋    | 9/16 [00:05<00:04,  1.52it/s]Predicting DataLoader 0:  62%|██████▎   | 10/16 [00:06<00:03,  1.64it/s]Predicting DataLoader 0:  69%|██████▉   | 11/16 [00:06<00:02,  1.75it/s]Predicting DataLoader 0:  75%|███████▌  | 12/16 [00:07<00:02,  1.70it/s]Predicting DataLoader 0:  81%|████████▏ | 13/16 [00:07<00:01,  1.74it/s]Predicting DataLoader 0:  88%|████████▊ | 14/16 [00:07<00:01,  1.82it/s]Predicting DataLoader 0:  94%|█████████▍| 15/16 [00:07<00:00,  1.91it/s]Predicting DataLoader 0: 100%|██████████| 16/16 [00:08<00:00,  1.99it/s]Predicting DataLoader 0: 100%|██████████| 16/16 [00:08<00:00,  1.95it/s]

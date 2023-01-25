@@ -1,0 +1,35 @@
+=======================
+Loading Anaconda Module...
+"data":    {'debug': False, 'batch_size': 1, 'source': 'GOOGLE', 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}
+"model":   {'load': True, 'name': 'CLIPFinetune'}
+"output":  clip_ft_cnet_1.out
+"seed":    12345
+"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 10, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
+{'load': True, 'name': 'CLIPFinetune'}
+/scratch/users/oince22/vwsd/scripts
+self.debug: False
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Scraped google data is empty
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/scratch/users/oince22/vwsd/scripts/clip_ft_pred.py", line 44, in main
+    experiment = Experiment.load_from_checkpoint("/kuacc/users/oince22/vwsd/scripts/checkpoints/epoch=3-step=11584.ckpt")
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/core/saving.py", line 137, in load_from_checkpoint
+    return _load_from_checkpoint(
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/core/saving.py", line 158, in _load_from_checkpoint
+    checkpoint = pl_load(checkpoint_path, map_location=map_location)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/lightning_lite/utilities/cloud_io.py", line 47, in _load
+    with fs.open(path_or_url, "rb") as f:
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/fsspec/spec.py", line 1106, in open
+    f = self._open(
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/fsspec/implementations/local.py", line 175, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/fsspec/implementations/local.py", line 273, in __init__
+    self._open()
+  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/fsspec/implementations/local.py", line 278, in _open
+    self.f = open(self.path, mode=self.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/kuacc/users/oince22/vwsd/scripts/checkpoints/epoch=3-step=11584.ckpt'
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
