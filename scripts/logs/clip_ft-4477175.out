@@ -1,72 +1,0 @@
-=======================
-Loading Anaconda Module...
-"data":    {'debug': True, 'batch_size': 1, 'source': 'GOOGLE', 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}
-"model":   {'load': False, 'name': 'CLIPFinetune'}
-"output":  clip_ft_cnet_1.out
-"seed":    12345
-"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 3, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
-{'load': False, 'name': 'CLIPFinetune'}
-/scratch/users/oince22/vwsd/scripts
-self.debug: True
-Config: "data":    {'debug': True, 'batch_size': 1, 'source': 'GOOGLE', 'num_workers': 5, 'train_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1', 'trial_dir': '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/trial_v1'}
-"model":   {'load': False, 'name': 'CLIPFinetune'}
-"output":  /scratch/users/oince22/vwsd/scripts/clip_ft_cnet_1.out
-"seed":    12345
-"trainer": {'accelerator': 'gpu', 'devices': 1, 'max_epochs': 3, 'precision': 16, 'gradient_clip_val': 1.0, 'val_check_interval': 1.0, 'resume_from_checkpoint': None, 'accumulate_grad_batches': 1, 'num_sanity_val_steps': 0}
-/scratch/users/oince22/vwsd/scripts
-self.debug: True
-/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:604: UserWarning: Checkpoint directory /scratch/users/oince22/vwsd/scripts/checkpoints exists and is not empty.
-  rank_zero_warn(f"Checkpoint directory {dirpath} exists and is not empty.")
-Training: 0it [00:00, ?it/s]Training:   0%|          | 0/40 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/40 [00:00<?, ?it/s] Epoch 0:   2%|▎         | 1/40 [00:07<04:37,  7.11s/it]Epoch 0:   2%|▎         | 1/40 [00:07<04:37,  7.11s/it, loss=0.0131, train_loss=0.0131]Epoch 0:   5%|▌         | 2/40 [00:07<02:29,  3.93s/it, loss=0.0131, train_loss=0.0131]Epoch 0:   5%|▌         | 2/40 [00:07<02:29,  3.94s/it, loss=0.00658, train_loss=8.34e-6]Epoch 0:   8%|▊         | 3/40 [00:08<01:44,  2.83s/it, loss=0.00658, train_loss=8.34e-6]Epoch 0:   8%|▊         | 3/40 [00:08<01:44,  2.83s/it, loss=0.0204, train_loss=0.0481]  Epoch 0:  10%|█         | 4/40 [00:09<01:22,  2.28s/it, loss=0.0204, train_loss=0.0481]Epoch 0:  10%|█         | 4/40 [00:09<01:22,  2.28s/it, loss=0.621, train_loss=2.420]  Epoch 0:  12%|█▎        | 5/40 [00:09<01:09,  1.98s/it, loss=0.621, train_loss=2.420]Epoch 0:  12%|█▎        | 5/40 [00:09<01:09,  1.98s/it, loss=0.497, train_loss=0.000559]Epoch 0:  15%|█▌        | 6/40 [00:10<00:59,  1.76s/it, loss=0.497, train_loss=0.000559]Epoch 0:  15%|█▌        | 6/40 [00:10<00:59,  1.76s/it, loss=0.898, train_loss=2.910]   Epoch 0:  18%|█▊        | 7/40 [00:11<00:53,  1.61s/it, loss=0.898, train_loss=2.910]Epoch 0:  18%|█▊        | 7/40 [00:11<00:53,  1.61s/it, loss=0.77, train_loss=0.00039]Epoch 0:  20%|██        | 8/40 [00:12<00:48,  1.50s/it, loss=0.77, train_loss=0.00039]Epoch 0:  20%|██        | 8/40 [00:12<00:48,  1.51s/it, loss=0.679, train_loss=0.0382]Epoch 0:  22%|██▎       | 9/40 [00:12<00:44,  1.42s/it, loss=0.679, train_loss=0.0382]Epoch 0:  22%|██▎       | 9/40 [00:12<00:44,  1.42s/it, loss=0.603, train_loss=0.0011]Epoch 0:  25%|██▌       | 10/40 [00:13<00:40,  1.36s/it, loss=0.603, train_loss=0.0011]Epoch 0:  25%|██▌       | 10/40 [00:13<00:40,  1.36s/it, loss=0.543, train_loss=0.000183]Epoch 0:  28%|██▊       | 11/40 [00:14<00:37,  1.30s/it, loss=0.543, train_loss=0.000183]Epoch 0:  28%|██▊       | 11/40 [00:14<00:37,  1.30s/it, loss=0.494, train_loss=0.000586]Epoch 0:  30%|███       | 12/40 [00:14<00:34,  1.25s/it, loss=0.494, train_loss=0.000586]Epoch 0:  30%|███       | 12/40 [00:14<00:34,  1.25s/it, loss=0.874, train_loss=5.060]   Epoch 0:  32%|███▎      | 13/40 [00:15<00:32,  1.20s/it, loss=0.874, train_loss=5.060]Epoch 0:  32%|███▎      | 13/40 [00:15<00:32,  1.20s/it, loss=0.855, train_loss=0.623]Epoch 0:  35%|███▌      | 14/40 [00:16<00:30,  1.16s/it, loss=0.855, train_loss=0.623]Epoch 0:  35%|███▌      | 14/40 [00:16<00:30,  1.17s/it, loss=0.794, train_loss=0.00537]Epoch 0:  38%|███▊      | 15/40 [00:17<00:28,  1.14s/it, loss=0.794, train_loss=0.00537]Epoch 0:  38%|███▊      | 15/40 [00:17<00:28,  1.14s/it, loss=0.749, train_loss=0.113]  Epoch 0:  40%|████      | 16/40 [00:17<00:26,  1.11s/it, loss=0.749, train_loss=0.113]Epoch 0:  40%|████      | 16/40 [00:17<00:26,  1.11s/it, loss=0.702, train_loss=2.26e-6]Epoch 0:  42%|████▎     | 17/40 [00:18<00:25,  1.09s/it, loss=0.702, train_loss=2.26e-6]Epoch 0:  42%|████▎     | 17/40 [00:18<00:25,  1.09s/it, loss=0.675, train_loss=0.235]  Epoch 0:  45%|████▌     | 18/40 [00:19<00:23,  1.07s/it, loss=0.675, train_loss=0.235]Epoch 0:  45%|████▌     | 18/40 [00:19<00:23,  1.08s/it, loss=0.637, train_loss=8.68e-5]Epoch 0:  48%|████▊     | 19/40 [00:20<00:22,  1.06s/it, loss=0.637, train_loss=8.68e-5]Epoch 0:  48%|████▊     | 19/40 [00:20<00:22,  1.06s/it, loss=0.604, train_loss=0.000129]Epoch 0:  50%|█████     | 20/40 [00:20<00:20,  1.04s/it, loss=0.604, train_loss=0.000129]Epoch 0:  50%|█████     | 20/40 [00:20<00:20,  1.05s/it, loss=0.573, train_loss=1.43e-6] Epoch 0:  52%|█████▎    | 21/40 [00:21<00:19,  1.03s/it, loss=0.573, train_loss=1.43e-6]Epoch 0:  52%|█████▎    | 21/40 [00:21<00:19,  1.03s/it, loss=0.67, train_loss=1.940]   Epoch 0:  55%|█████▌    | 22/40 [00:22<00:18,  1.01s/it, loss=0.67, train_loss=1.940]Epoch 0:  55%|█████▌    | 22/40 [00:22<00:18,  1.01s/it, loss=0.67, train_loss=2.38e-7]Epoch 0:  57%|█████▊    | 23/40 [00:23<00:17,  1.00s/it, loss=0.67, train_loss=2.38e-7]Epoch 0:  57%|█████▊    | 23/40 [00:23<00:17,  1.00s/it, loss=0.706, train_loss=0.766] Epoch 0:  60%|██████    | 24/40 [00:23<00:15,  1.01it/s, loss=0.706, train_loss=0.766]Epoch 0:  60%|██████    | 24/40 [00:23<00:15,  1.01it/s, loss=0.584, train_loss=9.54e-7]Epoch 0:  62%|██████▎   | 25/40 [00:24<00:14,  1.02it/s, loss=0.584, train_loss=9.54e-7]Epoch 0:  62%|██████▎   | 25/40 [00:24<00:14,  1.01it/s, loss=0.848, train_loss=5.260]  Epoch 0:  65%|██████▌   | 26/40 [00:25<00:13,  1.03it/s, loss=0.848, train_loss=5.260]Epoch 0:  65%|██████▌   | 26/40 [00:25<00:13,  1.02it/s, loss=0.702, train_loss=2.26e-6]Epoch 0:  68%|██████▊   | 27/40 [00:26<00:12,  1.03it/s, loss=0.702, train_loss=2.26e-6]Epoch 0:  68%|██████▊   | 27/40 [00:26<00:12,  1.03it/s, loss=0.702, train_loss=0.000]  Epoch 0:  70%|███████   | 28/40 [00:26<00:11,  1.04it/s, loss=0.702, train_loss=0.000]Epoch 0:  70%|███████   | 28/40 [00:26<00:11,  1.04it/s, loss=0.7, train_loss=0.000102]Epoch 0:  72%|███████▎  | 29/40 [00:27<00:10,  1.05it/s, loss=0.7, train_loss=0.000102]Epoch 0:  72%|███████▎  | 29/40 [00:27<00:10,  1.05it/s, loss=0.7, train_loss=2.15e-6] Epoch 0:  75%|███████▌  | 30/40 [00:28<00:09,  1.06it/s, loss=0.7, train_loss=2.15e-6]Epoch 0:  75%|███████▌  | 30/40 [00:28<00:09,  1.06it/s, loss=0.7, train_loss=0.000556]Epoch 0:  78%|███████▊  | 31/40 [00:29<00:08,  1.06it/s, loss=0.7, train_loss=0.000556]Epoch 0:  78%|███████▊  | 31/40 [00:29<00:08,  1.06it/s, loss=1.06, train_loss=7.140]  Epoch 0:  80%|████████  | 32/40 [00:29<00:07,  1.07it/s, loss=1.06, train_loss=7.140]Epoch 0:  80%|████████  | 32/40 [00:29<00:07,  1.07it/s, loss=0.98, train_loss=3.530]Epoch 0:  82%|████████▎ | 33/40 [00:30<00:06,  1.08it/s, loss=0.98, train_loss=3.530]Epoch 0:  82%|████████▎ | 33/40 [00:30<00:06,  1.08it/s, loss=0.949, train_loss=0.000684]Epoch 0:  85%|████████▌ | 34/40 [00:31<00:05,  1.08it/s, loss=0.949, train_loss=0.000684]Epoch 0:  85%|████████▌ | 34/40 [00:31<00:05,  1.08it/s, loss=0.949, train_loss=0.00108] Epoch 0:  88%|████████▊ | 35/40 [00:32<00:04,  1.09it/s, loss=0.949, train_loss=0.00108]Epoch 0:  88%|████████▊ | 35/40 [00:32<00:04,  1.09it/s, loss=0.943, train_loss=4.77e-7]Epoch 0:  90%|█████████ | 36/40 [00:32<00:03,  1.09it/s, loss=0.943, train_loss=4.77e-7]Epoch 0:  90%|█████████ | 36/40 [00:32<00:03,  1.09it/s, loss=0.944, train_loss=0.00318]
-Validation: 0it [00:00, ?it/s][A
-Validation:   0%|          | 0/4 [00:00<?, ?it/s][A
-Validation DataLoader 0:   0%|          | 0/4 [00:00<?, ?it/s][AError executing job with overrides: []
-Traceback (most recent call last):
-  File "/scratch/users/oince22/vwsd/scripts/clip_ft_pred.py", line 42, in main
-    results = trainer.fit(experiment, datamodule=train_dm)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 582, in fit
-    call._call_and_handle_interrupt(
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
-    return trainer_fn(*args, **kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 624, in _fit_impl
-    self._run(model, ckpt_path=self.ckpt_path)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1061, in _run
-    results = self._run_stage()
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1140, in _run_stage
-    self._run_train()
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1163, in _run_train
-    self.fit_loop.run()
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
-    self.advance(*args, **kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/fit_loop.py", line 267, in advance
-    self._outputs = self.epoch_loop.run(self._data_fetcher)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
-    self.on_advance_end()
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 251, in on_advance_end
-    self._run_validation()
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/training_epoch_loop.py", line 310, in _run_validation
-    self.val_loop.run()
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
-    self.advance(*args, **kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 152, in advance
-    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
-    self.advance(*args, **kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 137, in advance
-    output = self._evaluation_step(**kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 234, in _evaluation_step
-    output = self.trainer._call_strategy_hook(hook_name, *kwargs.values())
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1443, in _call_strategy_hook
-    output = fn(*args, **kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 390, in validation_step
-    return self.model.validation_step(*args, **kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
-    return func(*args, **kwargs)
-  File "/kuacc/users/oince22/.conda/envs/vwsd/lib/python3.10/site-packages/vwsd-0.0.1-py3.10.egg/vwsd/experiment.py", line 46, in validation_step
-    acc = (preds == labels).sum()
-AttributeError: 'bool' object has no attribute 'sum'
-
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-Epoch 0:  90%|█████████ | 36/40 [00:43<00:04,  1.21s/it, loss=0.944, train_loss=0.00318]
-
-                                                              [A

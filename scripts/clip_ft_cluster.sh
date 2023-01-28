@@ -7,7 +7,7 @@
 #SBATCH --qos=ai     
 #SBATCH --account=ai   
 #SBATCH --gres=gpu:tesla_t4:1    
-#SBATCH --time=1-0:0:0        
+#SBATCH --time=6:0:0        
 #SBATCH --output=logs/clip_ft-%j.out
 #SBATCH --mem=60G
 # Load Anaconda

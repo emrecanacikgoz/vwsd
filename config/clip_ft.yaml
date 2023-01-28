@@ -1,5 +1,5 @@
 seed: 12345
-output: "clip_ft_google_val.out"
+output: "clip_ft_wit.out"
 
 trainer:
   accelerator: "gpu"
@@ -7,7 +7,7 @@ trainer:
   max_epochs: 1
   precision: 16
   gradient_clip_val: 1.0
-  val_check_interval: 1.0
+  val_check_interval: 0.1
   resume_from_checkpoint: null
   accumulate_grad_batches: 1
   num_sanity_val_steps: 0
@@ -16,11 +16,12 @@ trainer:
 model:
   load: False # do we load a model or not
   name: "CLIPFinetune"
+  lr: 0.0000005
 
 # data module
 data:
   debug: False
-  batch_size: 4
+  batch_size: 1
   source: 'GOOGLE' # the source that we should use 
   num_workers: 5
   train_dir: '/datasets/SemEval/semeval-2023-task-1-V-WSD-train-v1/train_v1'

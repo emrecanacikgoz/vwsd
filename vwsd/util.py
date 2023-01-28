@@ -1,13 +1,9 @@
 import os.path as osp
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 import numpy as np
 from random import sample
 import sys
 import requests
 import urllib
-from requests_html import HTML
-from requests_html import HTMLSession
 import string
 from pprint import pprint
 import re
@@ -21,12 +17,12 @@ whitelist_relations = ['IsA', 'RelatedTo']
 printable = set(string.printable)
 
 # regexes
-date_re = re.compile(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+\d{4}")
-whitespace_re = re.compile(r"[\s\n]+")
-citation_re = re.compile(r'[A-Za-z]+[\s]+[A-Za-z]+[\s]+(\d{4})[\s]+(Cited\sby)?\s+\d+')
-http_re = re.compile(r'http\S+') 
-three_dots_re = re.compile(r'[\S]+\.\.\.')
-wiki_phoneme_re = re.compile(r'\(.*\)')
+date_re = re.compile(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2},\s+\d{4}", re.IGNORECASE)
+whitespace_re = re.compile(r"[\s\n]+", re.IGNORECASE)
+citation_re = re.compile(r'[A-Za-z]+[\s]+[A-Za-z]+[\s]+(\d{4})[\s]+(Cited\sby)?\s+\d+', re.IGNORECASE)
+http_re = re.compile(r'http\S+', re.IGNORECASE) 
+three_dots_re = re.compile(r'[\S]+\.\.\.', re.IGNORECASE)
+wiki_phoneme_re = re.compile(r'\(.*\)', re.IGNORECASE)
 
 def clean_text(info):
     # there are a lot of dates, remove them
@@ -35,7 +31,7 @@ def clean_text(info):
     # remove punctuation from the data, I think we won't need'em
     info = info.translate(str.maketrans('', '', string.punctuation))
 
-    # remove unprintable characters
+    # remove unprintable characters -> NO PROBLEM, WE TRANSLATED ALL MULTILINGUAL TEXT IN TO ENGLISH
     info = ''.join(filter(lambda x: x in printable, info))
     
     # remove citations

@@ -3,6 +3,7 @@ import os.path as osp
 import json
 import re
 from functools import wraps
+import random
 
 from tqdm import tqdm
 from PIL import Image
@@ -33,7 +34,7 @@ class VWSDDataset(Dataset):
         self._load_data()
     
     def _load_data(self):
-        assert self.split in ['trial', 'train']
+        assert self.split in ['trial', 'train', 'validate', 'test']
         if self.split == 'trial':
             data_file = osp.join(self.root, 'trial.data.v1.txt')
             label_file = osp.join(self.root, 'trial.gold.v1.txt')
@@ -41,30 +42,56 @@ class VWSDDataset(Dataset):
             data_file = osp.join(self.root, 'train.data.v1.txt')
             label_file = osp.join(self.root, 'train.gold.v1.txt')    
 
-        with open(data_file, 'r') as f:
-            items = [line.strip().split('\t') for line in f.readlines()]
+        if self.split in ["train", "trial"]:
+            with open(data_file, 'r') as f:
+                items = [line.strip().split('\t') for line in f.readlines()]
             
-        with open(label_file, 'r') as f:
-            labels = [line.strip() for line in f.readlines()]
+            with open(label_file, 'r') as f:
+                labels = [line.strip() for line in f.readlines()]
+        else:
+            items, labels = [], []
 
+        # TODO randomly add items and labels as seen here
+	
         self.items = []
         scraped_items = self._read_scraped_data()
 
+        all_img_paths = []
+        for item in scraped_items:
+            if "language" in item: # if the example is from WiT
+                all_img_paths.append(item["image_path"])
+
+        for item in scraped_items:
+            if "language" in item:
+                negatives = random.sample(all_img_paths, 9)
+                while item["image_path"] in negatives:
+                    negatives = random.sample(all_img_paths, 9)
+                
+                negatives.append(item["image_path"])
+                random.shuffle(negatives)
+                word, context = item["nl_context"].split()[0], item["nl_context"]
+                negatives.insert(0, context)
+                negatives.insert(0, word)
+                items.append(negatives) # TODO
+                labels.append(item["image_path"])
+
+        # TODO Newly added section parts
         assert len(items) == len(labels)
         if self.debug:
             items, labels, scraped_items = items[:40], labels[:40], scraped_items[:40]
-
+ 
         for inputs, label, scraped_item in zip(items, labels, scraped_items):
-            complete_context = f"{inputs[0]} {inputs[1]}"
+            complete_context = inputs[1]
             prompt = self._clean_scraped_data(scraped_item, complete_context)
             
             self.items.append({
-                'word': inputs[0],
-                'context': inputs[1],
+                'word': inputs[0].lower(),
+                'context': inputs[1].lower(),
                 'images': inputs[2:],
                 'gold': label,
-                'prompt': prompt,
+                'prompt': prompt.lower(),
             })
+
 
         for item in self.items[:20]:
             word, context, prompt = item["word"], item["context"], item["prompt"]
@@ -74,11 +101,16 @@ class VWSDDataset(Dataset):
 
 
     def _read_scraped_data(self):
-        print(os.getcwd())
+        print(os.getcwd(), self.split)
         if self.split == "train":
-            file_path = "../vwsd/data.json"
+            file_path = "../vwsd/dummy_data/data_train.json"
+        elif self.split == "validate":
+            file_path = "../vwsd/dummy_data/data_val.json"
         elif self.split == "trial":
             file_path = "../vwsd/data_trial.json"
+        elif self.split == "test":
+            file_path = "../vwsd/dummy_data/data_test.json"
+
         with open(file_path, 'r') as scraped_data:
             scraped_items = list(scraped_data)
         
@@ -128,8 +160,12 @@ class VWSDDataset(Dataset):
         
         return prompt
 
+    # TODO! CHANGE HERE
     def _read_image(self, file_name):
-        if self.split == "train":
+        from_wit = "wit" in file_name
+        if from_wit:
+            file_path = osp.join("../vwsd/dummy_images", file_name)
+        elif self.split == "train":
             file_path = osp.join(self.root, 'train_images_v1', file_name)
         elif self.split == "trial":
             file_path = osp.join(self.root, 'trial_images_v1', file_name)
@@ -191,7 +227,7 @@ class VWSDDataModule(pl.LightningDataModule):
         num_workers=0,
         transform=None,
         tokenizer=None,
-        source="CNET"
+        source="GOOGLE"
     ):
         super().__init__()
         self.train_dir = self.trial_dir = None
@@ -215,18 +251,11 @@ class VWSDDataModule(pl.LightningDataModule):
 
     def setup(self, stage='fit'):
         if stage == 'fit':
-            self.data = self.load_split(split='train')
-            train_size = int(0.9 * len(self.data))
-
-            self.train_data, self.val_data = random_split(self.data, [train_size, len(self.data)-train_size])
-
-        if stage == 'validate':
-            self.data = self.load_split(split='train')
-            train_size = int(0.9 * len(self.data))
-
-            self.train_data, self.val_data = random_split(self.data, [train_size, len(self.data)-train_size])
-        
-        if stage == 'predict' or stage == 'test':
+            self.train_data = self.load_split(split='train')
+            self.val_data = self.load_split(split='validate')
+        elif stage == 'test':
+            self.test_data = self.load_split(split='test')
+        elif stage == 'predict':
             self.trial_data = self.load_split(split='trial')
     
     def load_split(self, split):
@@ -234,6 +263,8 @@ class VWSDDataModule(pl.LightningDataModule):
             root = self.train_dir
         elif split == 'trial':
             root = self.trial_dir
+        else:
+            root = "" #TODO
 
         return VWSDDataset(
             root=root,
@@ -266,7 +297,7 @@ class VWSDDataModule(pl.LightningDataModule):
 
     def test_dataloader(self):
         return DataLoader(
-            self.trial_data,
+            self.test_data,
             batch_size=self.batch_size,
             shuffle=False,
             num_workers=self.num_workers,

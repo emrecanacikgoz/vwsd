@@ -6,11 +6,12 @@ import pytorch_lightning as pl
 from vwsd.model import CLIPFinetune
 
 class BaseExperiment(pl.LightningModule):
-    def __init__(self, config):
+    def __init__(self, config, lr=5e-7):
         super().__init__()
         self.config = config
         print(f"Config: {config}")
         model_name = self.config.get('model', {}).get('name', 'UndefinedModel')
+        self.lr = self.config.get('model', {}).get('lr', 5e-6)
         if model_name == 'CLIPZeroShotBaseline':
             self.model = CLIPZeroShotBaseline()
         elif model_name == 'CLIPFinetune':
@@ -45,6 +46,28 @@ class BaseExperiment(pl.LightningModule):
 
         self.log('val_acc', acc, prog_bar=True, on_epoch=True)
         self.log('val_loss', loss, prog_bar=True, on_epoch=True)
+
+
+    def optimizer_step(
+        self,
+        epoch,
+        batch_idx,
+        optimizer,
+        optimizer_idx,
+        optimizer_closure,
+        on_tpu=False,
+        using_lbfgs=False,
+        using_native_amp=None
+    ):
+        # update params
+        optimizer.step(closure=optimizer_closure)
+
+        # skip the first 500 steps
+        if self.trainer.global_step < 5000:
+            lr_scale = min(1.0, float(self.trainer.global_step + 1) / 5000.0)
+            for pg in optimizer.param_groups:
+                pg["lr"] = lr_scale * self.lr
+
         
 
     @torch.no_grad()
@@ -65,5 +88,5 @@ class BaseExperiment(pl.LightningModule):
         }
     
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=5e-7)
+        optimizer = torch.optim.AdamW(self.parameters(), lr=self.lr)
         return optimizer
